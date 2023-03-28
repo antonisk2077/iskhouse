@@ -1,0 +1,232 @@
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 116
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: user_lang_switch in /home/mywondersiteclu/public_html/ams/header.php on line 124
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 125
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: lang_profile in /home/mywondersiteclu/public_html/ams/header.php on line 127
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: lang_signout in /home/mywondersiteclu/public_html/ams/header.php on line 128
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header.php on line 147
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: menu_employee_leave in /home/mywondersiteclu/public_html/ams/header.php on line 182
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: menu_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 233
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: menu_meeting_list in /home/mywondersiteclu/public_html/ams/header.php on line 235
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: menu_add_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 236
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: notice_board in /home/mywondersiteclu/public_html/ams/header.php on line 239
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: notice_board_1 in /home/mywondersiteclu/public_html/ams/header.php on line 241
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: notice_board_2 in /home/mywondersiteclu/public_html/ams/header.php on line 242
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: notice_board_3 in /home/mywondersiteclu/public_html/ams/header.php on line 243
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: email_sms in /home/mywondersiteclu/public_html/ams/header.php on line 246
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: salary_report_text in /home/mywondersiteclu/public_html/ams/header.php on line 256
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: database_left_menu in /home/mywondersiteclu/public_html/ams/header.php on line 261
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: database_clear_dummy_data in /home/mywondersiteclu/public_html/ams/header.php on line 263
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: menu_admin_setup in /home/mywondersiteclu/public_html/ams/header.php on line 268
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: branch in /home/mywondersiteclu/public_html/ams/header.php on line 270
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: branch_list in /home/mywondersiteclu/public_html/ams/header.php on line 272
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: add_branch in /home/mywondersiteclu/public_html/ams/header.php on line 273
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: menu_currency_setup in /home/mywondersiteclu/public_html/ams/header.php on line 281
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: valid_email in /home/mywondersiteclu/public_html/ams/header.php on line 296
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header.php on line 303
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 320
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header.php on line 323
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header.php on line 327
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header.php on line 331
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header.php on line 335
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header.php on line 338
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header.php on line 341
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: user_lang_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 361
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 394
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: available_rooms in /home/mywondersiteclu/public_html/ams/header.php on line 436
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: available_rooms_floor in /home/mywondersiteclu/public_html/ams/header.php on line 442
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: available_rooms_unit in /home/mywondersiteclu/public_html/ams/header.php on line 443
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:2
+[04-Aug-2020 22:13:19 UTC] PHP Warning:  include(/home/mywondersiteclu/public_html/ams/language/Spanish/lang_mailsms_list.php): failed to open stream: No such file or directory in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 9
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Warning:  include(/home/mywondersiteclu/public_html/ams/language/Spanish/lang_mailsms_list.php): failed to open stream: No such file or directory in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 9
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Warning:  include(): Failed opening '/home/mywondersiteclu/public_html/ams/language/Spanish/lang_mailsms_list.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 9
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: list_title in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 151
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: add_new_floor_information_breadcam in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 154
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: list_title in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 155
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: delete_floor_information in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 166
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: add_sms in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 171
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_21 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 175
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_23 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 175
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_22 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 175
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: list_title in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 181
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: list_1 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 188
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: list_2 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 189
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: list_3 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 190
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: list_4 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 191
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: list_5 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 192
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: add_sms in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 261
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_10 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 308
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_11 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 319
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_12 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 322
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_13 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 324
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_14 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 328
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_15 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 329
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: confirm in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 343
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_16 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 378
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_16 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 408
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0
+[04-Aug-2020 22:13:19 UTC] PHP Notice:  Undefined index: text_16 in /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php on line 437
+[04-Aug-2020 22:13:19 UTC] PHP Stack trace:
+[04-Aug-2020 22:13:19 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/mailsms/mailsms.php:0

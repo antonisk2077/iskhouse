@@ -1,0 +1,10 @@
+[09-Jan-2023 20:37:56 UTC] PHP Warning:  file_get_contents(https://reallyfreegeoip.org/json/196.89.160.144,172.70.61.18): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/jbkwqyei/TheCDR/test.coderdot-workshop.xyz/test.php on line 13
+[09-Jan-2023 20:39:27 UTC] PHP Warning:  file_get_contents(https://reallyfreegeoip.org/json/196.89.160.144,172.70.61.18): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/jbkwqyei/TheCDR/test.coderdot-workshop.xyz/test.php on line 11
+[09-Jan-2023 20:39:30 UTC] PHP Warning:  file_get_contents(https://reallyfreegeoip.org/json/196.89.160.144,172.70.61.18): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/jbkwqyei/TheCDR/test.coderdot-workshop.xyz/test.php on line 11
+[09-Jan-2023 20:39:44 UTC] PHP Warning:  file_get_contents(https://reallyfreegeoip.org/json/196.89.160.144,172.70.61.18): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/jbkwqyei/TheCDR/test.coderdot-workshop.xyz/test.php on line 11
+[09-Jan-2023 20:47:29 UTC] PHP Notice:  Trying to get property of non-object in /home/jbkwqyei/TheCDR/test.coderdot-workshop.xyz/test.php on line 25
+[13-Jan-2023 23:49:23 UTC] PHP Fatal error:  Call to undefined function add_action() in /home/jbkwqyei/TheCDR/test.coderdot-workshop.xyz/test.php on line 54

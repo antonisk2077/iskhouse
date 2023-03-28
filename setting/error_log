@@ -1,0 +1,699 @@
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 116
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: user_lang_switch in /home/mywondersiteclu/public_html/ams/header.php on line 124
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 125
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: lang_profile in /home/mywondersiteclu/public_html/ams/header.php on line 127
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: lang_signout in /home/mywondersiteclu/public_html/ams/header.php on line 128
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header.php on line 147
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: menu_employee_leave in /home/mywondersiteclu/public_html/ams/header.php on line 182
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: menu_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 233
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: menu_meeting_list in /home/mywondersiteclu/public_html/ams/header.php on line 235
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: menu_add_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 236
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: notice_board in /home/mywondersiteclu/public_html/ams/header.php on line 239
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: notice_board_1 in /home/mywondersiteclu/public_html/ams/header.php on line 241
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: notice_board_2 in /home/mywondersiteclu/public_html/ams/header.php on line 242
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: notice_board_3 in /home/mywondersiteclu/public_html/ams/header.php on line 243
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: email_sms in /home/mywondersiteclu/public_html/ams/header.php on line 246
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: salary_report_text in /home/mywondersiteclu/public_html/ams/header.php on line 256
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: database_left_menu in /home/mywondersiteclu/public_html/ams/header.php on line 261
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: database_clear_dummy_data in /home/mywondersiteclu/public_html/ams/header.php on line 263
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: menu_admin_setup in /home/mywondersiteclu/public_html/ams/header.php on line 268
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: branch in /home/mywondersiteclu/public_html/ams/header.php on line 270
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: branch_list in /home/mywondersiteclu/public_html/ams/header.php on line 272
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: add_branch in /home/mywondersiteclu/public_html/ams/header.php on line 273
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: menu_currency_setup in /home/mywondersiteclu/public_html/ams/header.php on line 281
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: valid_email in /home/mywondersiteclu/public_html/ams/header.php on line 296
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header.php on line 303
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 320
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header.php on line 323
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header.php on line 327
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header.php on line 331
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header.php on line 335
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header.php on line 338
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header.php on line 341
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: user_lang_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 361
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 394
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: available_rooms in /home/mywondersiteclu/public_html/ams/header.php on line 436
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: available_rooms_floor in /home/mywondersiteclu/public_html/ams/header.php on line 442
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: available_rooms_unit in /home/mywondersiteclu/public_html/ams/header.php on line 443
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_222 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 137
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_22 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 143
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_x33 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 146
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_15 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 164
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_10 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 168
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_14 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 172
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_11 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 175
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_12 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 176
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_144 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 180
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_16 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 190
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_17 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 223
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_18 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 225
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_lang_1 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 231
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_lang_22 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 232
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_lang_2 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 232
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_lang_3 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 233
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_lang_4 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 234
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_lang_5 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 235
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_19 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 242
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_20 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 251
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_21 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 256
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_22x in /home/mywondersiteclu/public_html/ams/setting/language.php on line 261
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_23 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 266
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_24 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 271
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_25 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 288
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_26 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 293
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[30-Jul-2020 10:43:37 UTC] PHP Notice:  Undefined index: text_27 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 298
+[30-Jul-2020 10:43:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:43:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 116
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: user_lang_switch in /home/mywondersiteclu/public_html/ams/header.php on line 124
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 125
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: lang_profile in /home/mywondersiteclu/public_html/ams/header.php on line 127
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: lang_signout in /home/mywondersiteclu/public_html/ams/header.php on line 128
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header.php on line 147
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: menu_employee_leave in /home/mywondersiteclu/public_html/ams/header.php on line 182
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: menu_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 233
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: menu_meeting_list in /home/mywondersiteclu/public_html/ams/header.php on line 235
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: menu_add_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 236
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: notice_board in /home/mywondersiteclu/public_html/ams/header.php on line 239
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: notice_board_1 in /home/mywondersiteclu/public_html/ams/header.php on line 241
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: notice_board_2 in /home/mywondersiteclu/public_html/ams/header.php on line 242
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: notice_board_3 in /home/mywondersiteclu/public_html/ams/header.php on line 243
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: email_sms in /home/mywondersiteclu/public_html/ams/header.php on line 246
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: salary_report_text in /home/mywondersiteclu/public_html/ams/header.php on line 256
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: database_left_menu in /home/mywondersiteclu/public_html/ams/header.php on line 261
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: database_clear_dummy_data in /home/mywondersiteclu/public_html/ams/header.php on line 263
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: menu_admin_setup in /home/mywondersiteclu/public_html/ams/header.php on line 268
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: branch in /home/mywondersiteclu/public_html/ams/header.php on line 270
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: branch_list in /home/mywondersiteclu/public_html/ams/header.php on line 272
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: add_branch in /home/mywondersiteclu/public_html/ams/header.php on line 273
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: menu_currency_setup in /home/mywondersiteclu/public_html/ams/header.php on line 281
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: valid_email in /home/mywondersiteclu/public_html/ams/header.php on line 296
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header.php on line 303
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 320
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header.php on line 323
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header.php on line 327
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header.php on line 331
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header.php on line 335
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header.php on line 338
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header.php on line 341
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: user_lang_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 361
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 394
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: available_rooms in /home/mywondersiteclu/public_html/ams/header.php on line 436
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: available_rooms_floor in /home/mywondersiteclu/public_html/ams/header.php on line 442
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: available_rooms_unit in /home/mywondersiteclu/public_html/ams/header.php on line 443
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/admin.php:2
+[31-Jul-2020 15:37:37 UTC] PHP Warning:  include(/home/mywondersiteclu/public_html/ams/language/Spanish/lang_admin_setup.php): failed to open stream: No such file or directory in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 24
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Warning:  include(/home/mywondersiteclu/public_html/ams/language/Spanish/lang_admin_setup.php): failed to open stream: No such file or directory in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 24
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Warning:  include(): Failed opening '/home/mywondersiteclu/public_html/ams/language/Spanish/lang_admin_setup.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 24
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: button_text_save in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 31
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: page_title in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 121
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: home in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 123
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: settings in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 124
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: page_title in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 125
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: page_form in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 142
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: label_email in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 147
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: label_name in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 151
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 155
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: label_password in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 159
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: label_branch in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 163
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: label_branch in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 165
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: label_image in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 181
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: btn_reset in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 193
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: label_warning in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 198
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: delete_success in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 226
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: admin_list in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 233
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: column_0 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 240
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: column_1 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 241
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: column_2 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 242
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: column_33 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 243
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: column_3 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 244
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: column_4 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 245
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: required_1 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 313
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: required_2 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 317
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: required_3 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 321
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: required_4 in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 325
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[31-Jul-2020 15:37:37 UTC] PHP Notice:  Undefined index: confirm_delete in /home/mywondersiteclu/public_html/ams/setting/admin.php on line 333
+[31-Jul-2020 15:37:37 UTC] PHP Stack trace:
+[31-Jul-2020 15:37:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/admin.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 116
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: user_lang_switch in /home/mywondersiteclu/public_html/ams/header.php on line 124
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 125
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: lang_profile in /home/mywondersiteclu/public_html/ams/header.php on line 127
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: lang_signout in /home/mywondersiteclu/public_html/ams/header.php on line 128
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header.php on line 147
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: menu_employee_leave in /home/mywondersiteclu/public_html/ams/header.php on line 182
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: menu_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 233
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: menu_meeting_list in /home/mywondersiteclu/public_html/ams/header.php on line 235
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: menu_add_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 236
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: notice_board in /home/mywondersiteclu/public_html/ams/header.php on line 239
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: notice_board_1 in /home/mywondersiteclu/public_html/ams/header.php on line 241
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: notice_board_2 in /home/mywondersiteclu/public_html/ams/header.php on line 242
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: notice_board_3 in /home/mywondersiteclu/public_html/ams/header.php on line 243
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: email_sms in /home/mywondersiteclu/public_html/ams/header.php on line 246
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: salary_report_text in /home/mywondersiteclu/public_html/ams/header.php on line 256
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: database_left_menu in /home/mywondersiteclu/public_html/ams/header.php on line 261
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: database_clear_dummy_data in /home/mywondersiteclu/public_html/ams/header.php on line 263
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: menu_admin_setup in /home/mywondersiteclu/public_html/ams/header.php on line 268
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: branch in /home/mywondersiteclu/public_html/ams/header.php on line 270
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: branch_list in /home/mywondersiteclu/public_html/ams/header.php on line 272
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: add_branch in /home/mywondersiteclu/public_html/ams/header.php on line 273
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: menu_currency_setup in /home/mywondersiteclu/public_html/ams/header.php on line 281
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: valid_email in /home/mywondersiteclu/public_html/ams/header.php on line 296
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header.php on line 303
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 320
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header.php on line 323
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header.php on line 327
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header.php on line 331
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header.php on line 335
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header.php on line 338
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header.php on line 341
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: user_lang_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 361
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 394
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: available_rooms in /home/mywondersiteclu/public_html/ams/header.php on line 436
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: available_rooms_floor in /home/mywondersiteclu/public_html/ams/header.php on line 442
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: available_rooms_unit in /home/mywondersiteclu/public_html/ams/header.php on line 443
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/setting/language.php:2
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_222 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 137
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_22 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 143
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_x33 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 146
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_15 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 164
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_10 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 168
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_14 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 172
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_11 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 175
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_12 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 176
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_144 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 180
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_16 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 190
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_17 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 223
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_18 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 225
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_lang_1 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 231
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_lang_22 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 232
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_lang_2 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 232
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_lang_3 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 233
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_lang_4 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 234
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_lang_5 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 235
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_19 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 242
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_20 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 251
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_21 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 256
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_22x in /home/mywondersiteclu/public_html/ams/setting/language.php on line 261
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_23 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 266
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_24 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 271
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_25 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 288
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_26 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 293
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0
+[02-Aug-2020 18:14:09 UTC] PHP Notice:  Undefined index: text_27 in /home/mywondersiteclu/public_html/ams/setting/language.php on line 298
+[02-Aug-2020 18:14:09 UTC] PHP Stack trace:
+[02-Aug-2020 18:14:09 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/setting/language.php:0

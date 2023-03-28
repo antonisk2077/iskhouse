@@ -1,0 +1,12 @@
+[05-Aug-2020 01:11:46 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/mywondersiteclu/public_html/ams/unit/addunit.php on line 80
+[05-Aug-2020 01:11:46 UTC] PHP Stack trace:
+[05-Aug-2020 01:11:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/unit/addunit.php:0
+[05-Aug-2020 01:11:46 UTC] PHP   2. mysqli_query() /home/mywondersiteclu/public_html/ams/unit/addunit.php:80
+[05-Aug-2020 01:11:46 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/mywondersiteclu/public_html/ams/unit/addunit.php on line 81
+[05-Aug-2020 01:11:46 UTC] PHP Stack trace:
+[05-Aug-2020 01:11:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/unit/addunit.php:0
+[05-Aug-2020 01:11:46 UTC] PHP   2. mysqli_fetch_array() /home/mywondersiteclu/public_html/ams/unit/addunit.php:81
+[05-Aug-2020 01:11:46 UTC] PHP Warning:  mysqli_close(): Couldn't fetch mysqli in /home/mywondersiteclu/public_html/ams/unit/addunit.php on line 83
+[05-Aug-2020 01:11:46 UTC] PHP Stack trace:
+[05-Aug-2020 01:11:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/unit/addunit.php:0
+[05-Aug-2020 01:11:46 UTC] PHP   2. mysqli_close() /home/mywondersiteclu/public_html/ams/unit/addunit.php:83

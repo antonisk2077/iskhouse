@@ -1,0 +1,24 @@
+[06-Aug-2020 23:59:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/mywondersiteclu/public_html/ams/fund/add_fund.php on line 108
+[06-Aug-2020 23:59:08 UTC] PHP Stack trace:
+[06-Aug-2020 23:59:08 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:0
+[06-Aug-2020 23:59:08 UTC] PHP   2. mysqli_query() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:108
+[06-Aug-2020 23:59:08 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/mywondersiteclu/public_html/ams/fund/add_fund.php on line 109
+[06-Aug-2020 23:59:08 UTC] PHP Stack trace:
+[06-Aug-2020 23:59:08 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:0
+[06-Aug-2020 23:59:08 UTC] PHP   2. mysqli_fetch_array() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:109
+[06-Aug-2020 23:59:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/mywondersiteclu/public_html/ams/fund/add_fund.php on line 119
+[06-Aug-2020 23:59:08 UTC] PHP Stack trace:
+[06-Aug-2020 23:59:08 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:0
+[06-Aug-2020 23:59:08 UTC] PHP   2. mysqli_query() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:119
+[06-Aug-2020 23:59:08 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/mywondersiteclu/public_html/ams/fund/add_fund.php on line 120
+[06-Aug-2020 23:59:08 UTC] PHP Stack trace:
+[06-Aug-2020 23:59:08 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:0
+[06-Aug-2020 23:59:08 UTC] PHP   2. mysqli_fetch_array() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:120
+[06-Aug-2020 23:59:08 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/mywondersiteclu/public_html/ams/fund/add_fund.php on line 130
+[06-Aug-2020 23:59:08 UTC] PHP Stack trace:
+[06-Aug-2020 23:59:08 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:0
+[06-Aug-2020 23:59:08 UTC] PHP   2. mysqli_query() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:130
+[06-Aug-2020 23:59:08 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/mywondersiteclu/public_html/ams/fund/add_fund.php on line 131
+[06-Aug-2020 23:59:08 UTC] PHP Stack trace:
+[06-Aug-2020 23:59:08 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:0
+[06-Aug-2020 23:59:08 UTC] PHP   2. mysqli_fetch_array() /home/mywondersiteclu/public_html/ams/fund/add_fund.php:131

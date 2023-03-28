@@ -1,0 +1,16 @@
+[06-Aug-2020 23:58:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/mywondersiteclu/public_html/ams/owner/addowner.php on line 127
+[06-Aug-2020 23:58:41 UTC] PHP Stack trace:
+[06-Aug-2020 23:58:41 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/owner/addowner.php:0
+[06-Aug-2020 23:58:41 UTC] PHP   2. mysqli_query() /home/mywondersiteclu/public_html/ams/owner/addowner.php:127
+[06-Aug-2020 23:58:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/mywondersiteclu/public_html/ams/owner/addowner.php on line 128
+[06-Aug-2020 23:58:41 UTC] PHP Stack trace:
+[06-Aug-2020 23:58:41 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/owner/addowner.php:0
+[06-Aug-2020 23:58:41 UTC] PHP   2. mysqli_fetch_array() /home/mywondersiteclu/public_html/ams/owner/addowner.php:128
+[06-Aug-2020 23:58:41 UTC] PHP Warning:  mysqli_query(): Couldn't fetch mysqli in /home/mywondersiteclu/public_html/ams/owner/addowner.php on line 187
+[06-Aug-2020 23:58:41 UTC] PHP Stack trace:
+[06-Aug-2020 23:58:41 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/owner/addowner.php:0
+[06-Aug-2020 23:58:41 UTC] PHP   2. mysqli_query() /home/mywondersiteclu/public_html/ams/owner/addowner.php:187
+[06-Aug-2020 23:58:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/mywondersiteclu/public_html/ams/owner/addowner.php on line 188
+[06-Aug-2020 23:58:41 UTC] PHP Stack trace:
+[06-Aug-2020 23:58:41 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/owner/addowner.php:0
+[06-Aug-2020 23:58:41 UTC] PHP   2. mysqli_fetch_array() /home/mywondersiteclu/public_html/ams/owner/addowner.php:188

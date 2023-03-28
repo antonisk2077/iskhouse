@@ -1,0 +1,453 @@
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 116
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: user_lang_switch in /home/mywondersiteclu/public_html/ams/header.php on line 124
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 125
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: lang_profile in /home/mywondersiteclu/public_html/ams/header.php on line 127
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: lang_signout in /home/mywondersiteclu/public_html/ams/header.php on line 128
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header.php on line 147
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: menu_employee_leave in /home/mywondersiteclu/public_html/ams/header.php on line 182
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: menu_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 233
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: menu_meeting_list in /home/mywondersiteclu/public_html/ams/header.php on line 235
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: menu_add_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 236
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: notice_board in /home/mywondersiteclu/public_html/ams/header.php on line 239
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: notice_board_1 in /home/mywondersiteclu/public_html/ams/header.php on line 241
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: notice_board_2 in /home/mywondersiteclu/public_html/ams/header.php on line 242
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: notice_board_3 in /home/mywondersiteclu/public_html/ams/header.php on line 243
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: email_sms in /home/mywondersiteclu/public_html/ams/header.php on line 246
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: salary_report_text in /home/mywondersiteclu/public_html/ams/header.php on line 256
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: database_left_menu in /home/mywondersiteclu/public_html/ams/header.php on line 261
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: database_clear_dummy_data in /home/mywondersiteclu/public_html/ams/header.php on line 263
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: menu_admin_setup in /home/mywondersiteclu/public_html/ams/header.php on line 268
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: branch in /home/mywondersiteclu/public_html/ams/header.php on line 270
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: branch_list in /home/mywondersiteclu/public_html/ams/header.php on line 272
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: add_branch in /home/mywondersiteclu/public_html/ams/header.php on line 273
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: menu_currency_setup in /home/mywondersiteclu/public_html/ams/header.php on line 281
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: valid_email in /home/mywondersiteclu/public_html/ams/header.php on line 296
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header.php on line 303
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 320
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header.php on line 323
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header.php on line 327
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header.php on line 331
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header.php on line 335
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header.php on line 338
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header.php on line 341
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: user_lang_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 361
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 394
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: available_rooms in /home/mywondersiteclu/public_html/ams/header.php on line 436
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: available_rooms_floor in /home/mywondersiteclu/public_html/ams/header.php on line 442
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: available_rooms_unit in /home/mywondersiteclu/public_html/ams/header.php on line 443
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 04:26:57 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 04:26:57 UTC] PHP Notice:  Undefined index: confirm in /home/mywondersiteclu/public_html/ams/floor/floorlist.php on line 85
+[30-Jul-2020 04:26:57 UTC] PHP Stack trace:
+[30-Jul-2020 04:26:57 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 116
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: user_lang_switch in /home/mywondersiteclu/public_html/ams/header.php on line 124
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 125
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: lang_profile in /home/mywondersiteclu/public_html/ams/header.php on line 127
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: lang_signout in /home/mywondersiteclu/public_html/ams/header.php on line 128
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header.php on line 147
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: menu_employee_leave in /home/mywondersiteclu/public_html/ams/header.php on line 182
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: menu_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 233
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: menu_meeting_list in /home/mywondersiteclu/public_html/ams/header.php on line 235
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: menu_add_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 236
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: notice_board in /home/mywondersiteclu/public_html/ams/header.php on line 239
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: notice_board_1 in /home/mywondersiteclu/public_html/ams/header.php on line 241
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: notice_board_2 in /home/mywondersiteclu/public_html/ams/header.php on line 242
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: notice_board_3 in /home/mywondersiteclu/public_html/ams/header.php on line 243
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: email_sms in /home/mywondersiteclu/public_html/ams/header.php on line 246
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: salary_report_text in /home/mywondersiteclu/public_html/ams/header.php on line 256
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: database_left_menu in /home/mywondersiteclu/public_html/ams/header.php on line 261
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: database_clear_dummy_data in /home/mywondersiteclu/public_html/ams/header.php on line 263
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: menu_admin_setup in /home/mywondersiteclu/public_html/ams/header.php on line 268
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: branch in /home/mywondersiteclu/public_html/ams/header.php on line 270
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: branch_list in /home/mywondersiteclu/public_html/ams/header.php on line 272
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: add_branch in /home/mywondersiteclu/public_html/ams/header.php on line 273
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: menu_currency_setup in /home/mywondersiteclu/public_html/ams/header.php on line 281
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: valid_email in /home/mywondersiteclu/public_html/ams/header.php on line 296
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header.php on line 303
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 320
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header.php on line 323
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header.php on line 327
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header.php on line 331
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header.php on line 335
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header.php on line 338
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header.php on line 341
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: user_lang_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 361
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 394
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: available_rooms in /home/mywondersiteclu/public_html/ams/header.php on line 436
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: available_rooms_floor in /home/mywondersiteclu/public_html/ams/header.php on line 442
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: available_rooms_unit in /home/mywondersiteclu/public_html/ams/header.php on line 443
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[30-Jul-2020 10:42:37 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[30-Jul-2020 10:42:37 UTC] PHP Notice:  Undefined index: confirm in /home/mywondersiteclu/public_html/ams/floor/floorlist.php on line 85
+[30-Jul-2020 10:42:37 UTC] PHP Stack trace:
+[30-Jul-2020 10:42:37 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 116
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: user_lang_switch in /home/mywondersiteclu/public_html/ams/header.php on line 124
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 125
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: lang_profile in /home/mywondersiteclu/public_html/ams/header.php on line 127
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: lang_signout in /home/mywondersiteclu/public_html/ams/header.php on line 128
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header.php on line 147
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: menu_employee_leave in /home/mywondersiteclu/public_html/ams/header.php on line 182
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: menu_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 233
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: menu_meeting_list in /home/mywondersiteclu/public_html/ams/header.php on line 235
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: menu_add_meeting in /home/mywondersiteclu/public_html/ams/header.php on line 236
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: notice_board in /home/mywondersiteclu/public_html/ams/header.php on line 239
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: notice_board_1 in /home/mywondersiteclu/public_html/ams/header.php on line 241
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: notice_board_2 in /home/mywondersiteclu/public_html/ams/header.php on line 242
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: notice_board_3 in /home/mywondersiteclu/public_html/ams/header.php on line 243
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: email_sms in /home/mywondersiteclu/public_html/ams/header.php on line 246
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: salary_report_text in /home/mywondersiteclu/public_html/ams/header.php on line 256
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: database_left_menu in /home/mywondersiteclu/public_html/ams/header.php on line 261
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: database_clear_dummy_data in /home/mywondersiteclu/public_html/ams/header.php on line 263
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: menu_admin_setup in /home/mywondersiteclu/public_html/ams/header.php on line 268
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: branch in /home/mywondersiteclu/public_html/ams/header.php on line 270
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: branch_list in /home/mywondersiteclu/public_html/ams/header.php on line 272
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: add_branch in /home/mywondersiteclu/public_html/ams/header.php on line 273
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: menu_currency_setup in /home/mywondersiteclu/public_html/ams/header.php on line 281
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: valid_email in /home/mywondersiteclu/public_html/ams/header.php on line 296
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header.php on line 303
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: user_super_admin in /home/mywondersiteclu/public_html/ams/header.php on line 320
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header.php on line 323
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header.php on line 327
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header.php on line 331
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header.php on line 335
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header.php on line 338
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header.php on line 341
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: user_lang_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 361
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: user_branch_switcher in /home/mywondersiteclu/public_html/ams/header.php on line 394
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: available_rooms in /home/mywondersiteclu/public_html/ams/header.php on line 436
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: available_rooms_floor in /home/mywondersiteclu/public_html/ams/header.php on line 442
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: available_rooms_unit in /home/mywondersiteclu/public_html/ams/header.php on line 443
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
+[01-Aug-2020 12:55:05 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:2
+[01-Aug-2020 12:55:05 UTC] PHP Notice:  Undefined index: confirm in /home/mywondersiteclu/public_html/ams/floor/floorlist.php on line 85
+[01-Aug-2020 12:55:05 UTC] PHP Stack trace:
+[01-Aug-2020 12:55:05 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/floor/floorlist.php:0
