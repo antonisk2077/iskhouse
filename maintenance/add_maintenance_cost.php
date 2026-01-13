@@ -10,6 +10,7 @@ $m_title = '';
 $m_date = '';
 $m_amount = '0.00';
 $m_details = '';
+$m_location = '';
 $m_month = 0;
 $m_year = 0;
 $branch_id = '';
@@ -21,14 +22,18 @@ $id="";
 $hdnid="0";
 
 if(isset($_POST['txtMTitle'])){
+	$location_value = isset($_POST['ddlLocation']) ? trim($_POST['ddlLocation']) : '';
+	if($location_value === 'other'){
+		$location_value = isset($_POST['txtLocationOther']) ? trim($_POST['txtLocationOther']) : '';
+	}
 	if(isset($_POST['hdn']) && $_POST['hdn'] == '0'){
-		$sql = "INSERT INTO tbl_add_maintenance_cost(m_title, m_date, xmonth, xyear, m_amount, m_details,branch_id) values('$_POST[txtMTitle]','$_POST[txtMDate]','$_POST[ddlMonth]','$_POST[ddlYear]','$_POST[txtMAmount]','$_POST[txtMDetails]','" . $_SESSION['objLogin']['branch_id'] . "')";
+		$sql = "INSERT INTO tbl_add_maintenance_cost(m_title, m_location, m_date, xmonth, xyear, m_amount, m_details,branch_id) values('$_POST[txtMTitle]','".$location_value."','$_POST[txtMDate]','$_POST[ddlMonth]','$_POST[ddlYear]','$_POST[txtMAmount]','$_POST[txtMDetails]','" . $_SESSION['objLogin']['branch_id'] . "')";
 		mysqli_query($link,$sql);
 		mysqli_close($link);
 		$url = WEB_URL . 'maintenance/maintenance_cost_list.php?m=add';
 		header("Location: $url");
 	} else {
-		$sql = "UPDATE `tbl_add_maintenance_cost` SET `m_title`='".$_POST['txtMTitle']."',`m_date`='".$_POST['txtMDate']."',`xmonth`='".$_POST['ddlMonth']."',`xyear`='".$_POST['ddlYear']."',`m_amount`='".$_POST['txtMAmount']."',`m_details`='".$_POST['txtMDetails']."' WHERE mcid='".$_GET['id']."'";
+		$sql = "UPDATE `tbl_add_maintenance_cost` SET `m_title`='".$_POST['txtMTitle']."',`m_location`='".$location_value."',`m_date`='".$_POST['txtMDate']."',`xmonth`='".$_POST['ddlMonth']."',`xyear`='".$_POST['ddlYear']."',`m_amount`='".$_POST['txtMAmount']."',`m_details`='".$_POST['txtMDetails']."' WHERE mcid='".$_GET['id']."'";
 		mysqli_query($link,$sql);
 		$url = WEB_URL . 'maintenance/maintenance_cost_list.php?m=up';
 		header("Location: $url");
@@ -40,6 +45,7 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
 	$result = mysqli_query($link,"SELECT * FROM tbl_add_maintenance_cost where mcid = '" . $_GET['id'] . "'");
 	if($row = mysqli_fetch_array($result)){
 		$m_title = $row['m_title'];
+		$m_location = $row['m_location'];
 		$m_date = $row['m_date'];
 		$m_amount = $row['m_amount'];
 		$m_details = $row['m_details'];
@@ -76,6 +82,14 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
       </div>
       <form onSubmit="return validateMe();" action="<?php echo $form_url; ?>" method="post" enctype="multipart/form-data">
         <div class="box-body row">
+          <?php
+		  $unit_options = array();
+		  $result_loc = mysqli_query($link,"SELECT unit_no FROM tbl_add_unit WHERE branch_id = " . (int)$_SESSION['objLogin']['branch_id'] . " ORDER BY unit_no ASC");
+		  while($row_loc = mysqli_fetch_array($result_loc)){
+		  	$unit_options[] = $row_loc['unit_no'];
+		  }
+		  $is_other_location = ($m_location !== '' && !in_array($m_location, $unit_options, true));
+		  ?>
           <div class="form-group col-md-12">
             <label for="txtMDate"><span class="errorStar">*</span> <?php echo $_data['date'];?> :</label>
             <input type="text" name="txtMDate" value="<?php echo $m_date;?>" id="txtMDate" class="form-control datepicker"/>
@@ -95,16 +109,28 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
             <label for="ddlYear"><span class="errorStar">*</span> <?php echo $_data['year'];?> :</label>
             <select name="ddlYear" id="ddlYear" class="form-control">
               <option value="">--<?php echo $_data['select_year'];?>--</option>
-              <?php 
-				  	$result_unit = mysqli_query($link,"SELECT * FROM tbl_add_year_setup order by y_id ASC");
-					while($row_unit = mysqli_fetch_array($result_unit)){?>
-              <option <?php if($m_year == $row_unit['y_id']){echo 'selected';}?> value="<?php echo $row_unit['y_id'];?>"><?php echo $row_unit['xyear'];?></option>
+              <?php for($i=2023;$i<=date('Y');$i++){?>
+              <option <?php if($m_year == $i){echo 'selected';}?> value="<?php echo $i;?>"><?php echo $i;?></option>
               <?php } ?>
             </select>
           </div>
           <div class="form-group col-md-6">
             <label for="txtMTitle"><span class="errorStar">*</span> <?php echo $_data['text_1'];?> :</label>
             <input type="text" name="txtMTitle" value="<?php echo $m_title;?>" id="txtMTitle" class="form-control" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="ddlLocation"><span class="errorStar">*</span> <?php echo $_data['text_4'];?> :</label>
+            <select name="ddlLocation" id="ddlLocation" class="form-control">
+              <option value="">--<?php echo $_data['text_5'];?>--</option>
+              <?php foreach($unit_options as $unit_no){ ?>
+                <option <?php if(!$is_other_location && $m_location == $unit_no){echo 'selected';}?> value="<?php echo $unit_no;?>"><?php echo $unit_no;?></option>
+              <?php } ?>
+              <option <?php if($is_other_location){echo 'selected';}?> value="other"><?php echo $_data['text_6'];?></option>
+            </select>
+          </div>
+          <div class="form-group col-md-12" id="locationOtherWrap" style="display:<?php echo $is_other_location ? 'block' : 'none'; ?>;">
+            <label for="txtLocationOther"><span class="errorStar">*</span> <?php echo $_data['text_7'];?> :</label>
+            <input type="text" name="txtLocationOther" value="<?php echo $is_other_location ? $m_location : '';?>" id="txtLocationOther" class="form-control" />
           </div>
           <div class="form-group col-md-6">
             <label for="txtMAmount"><span class="errorStar">*</span> <?php echo $_data['text_2'];?> :</label>
@@ -153,6 +179,16 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
 			$("#txtMTitle").focus();
 			return false;
 		}
+		else if($("#ddlLocation").val() == ''){
+			alert("<?php echo $_data['v7']; ?>");
+			$("#ddlLocation").focus();
+			return false;
+		}
+		else if($("#ddlLocation").val() == 'other' && $("#txtLocationOther").val() == ''){
+			alert("<?php echo $_data['v8']; ?>");
+			$("#txtLocationOther").focus();
+			return false;
+		}
 		else if($("#txtMAmount").val() == ''){
 			alert("<?php echo $_data['v5']; ?>");
 			$("#txtMAmount").focus();
@@ -167,5 +203,13 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
 			return true;
 		}
 	}
+
+	$("#ddlLocation").change(function(){
+		if($(this).val() === 'other'){
+			$("#locationOtherWrap").show();
+		} else {
+			$("#locationOtherWrap").hide();
+		}
+	});
 </script>
 <?php include('../footer.php'); ?>

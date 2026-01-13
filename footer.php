@@ -3,7 +3,7 @@
 
 <footer class="main-footer">
   <div class="pull-right hidden-xs"> <b>Version</b> 3.0 </div>
-  <strong>Copyright &copy; 2014-<?php echo date('Y');?> <a target="_blank" href="http://sakosys.com">sakosys.com</a></strong> </footer>
+  <strong>Copyright &copy; 2014-<?php echo date('Y');?> <a target="_blank" href="https://iskhouse.id">Iskhouse.id</a></strong> </footer>
 <!-- /.control-sidebar -->
 <div class='control-sidebar-bg'></div>
 </div>

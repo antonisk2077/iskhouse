@@ -33,15 +33,15 @@ $owner_name = '';
 $ownid = 0;
 //
 
-if(isset($_POST['ddlFloorNo'])){
+if(isset($_POST['ddlMonth'])){
 	if(isset($_POST['hdn']) && $_POST['hdn'] == '0'){
-		$sql = "INSERT INTO tbl_add_fair(type,floor_no,unit_no,rid,month_id,xyear,water_bill,electric_bill,gas_bill,security_bill,utility_bill,other_bill,total_rent,issue_date,branch_id) values('$type','$_POST[ddlFloorNo]','$_POST[ddlUnitNo]','$_POST[hdnOwnerdId]','$_POST[ddlMonth]','$_POST[ddlYear]','$_POST[txtWaterBill]','$_POST[txtElectricBill]','$_POST[txtGasBill]','$_POST[txtSecurityBill]','$_POST[txtUtilityBill]','$_POST[txtOtherBill]','$_POST[txtTotalRent]','$_POST[txtIssueDate]','" . $_SESSION['objLogin']['branch_id'] . "')";
+		$sql = "INSERT INTO tbl_add_fair(type,floor_no,unit_no,rid,month_id,xyear,water_bill,electric_bill,gas_bill,security_bill,utility_bill,other_bill,total_rent,issue_date,branch_id) values('$type','0','0','0','$_POST[ddlMonth]','$_POST[ddlYear]','$_POST[txtWaterBill]','$_POST[txtElectricBill]','$_POST[txtGasBill]','0','0','0','$_POST[txtTotalRent]','$_POST[txtIssueDate]','" . $_SESSION['objLogin']['branch_id'] . "')";
 		mysqli_query($link,$sql);
 		mysqli_close($link);
 		$url = WEB_URL . 'owner_utility/owner_utility_list.php?m=add';
 		header("Location: $url");
 	}else{
-		$sql = "UPDATE `tbl_add_fair` SET `floor_no`='".$_POST['ddlFloorNo']."',`unit_no`='".$_POST['ddlUnitNo']."',`rid`='".$_POST['hdnOwnerdId']."',`month_id`='".$_POST['ddlMonth']."',`xyear`='".$_POST['ddlYear']."',`water_bill`='".$_POST['txtWaterBill']."',`electric_bill`='".$_POST['txtElectricBill']."',`gas_bill`='".$_POST['txtGasBill']."',`security_bill`='".$_POST['txtSecurityBill']."',`utility_bill`='".$_POST['txtUtilityBill']."',`other_bill`='".$_POST['txtOtherBill']."',`total_rent`='".$_POST['txtTotalRent']."',`issue_date`='".$_POST['txtIssueDate']."' WHERE f_id='".$_GET['id']."'";
+		$sql = "UPDATE `tbl_add_fair` SET `floor_no`='0',`unit_no`='0',`rid`='0',`month_id`='".$_POST['ddlMonth']."',`xyear`='".$_POST['ddlYear']."',`water_bill`='".$_POST['txtWaterBill']."',`electric_bill`='".$_POST['txtElectricBill']."',`gas_bill`='".$_POST['txtGasBill']."',`security_bill`='0',`utility_bill`='0',`other_bill`='0',`total_rent`='".$_POST['txtTotalRent']."',`issue_date`='".$_POST['txtIssueDate']."' WHERE f_id='".$_GET['id']."'";
 		mysqli_query($link,$sql);
 		$url = WEB_URL . 'owner_utility/owner_utility_list.php?m=up';
 		header("Location: $url");
@@ -77,10 +77,9 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
 	$result_location = mysqli_query($link,"SELECT * FROM tbl_add_utility_bill where branch_id= '".(int)$_SESSION['objLogin']['branch_id']."'");
 	if($row = mysqli_fetch_array($result_location)){
 		$gas_bill = $row['gas_bill'];
-		$security_bill = $row['security_bill'];
 	}
 	
-	$total_rent = (float)$gas_bill + (float)$security_bill;
+	$total_rent = (float)$gas_bill;
 	$total_rent = number_format($total_rent, 2, '.', '');
 }	
 ?>
@@ -106,33 +105,6 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
       </div>
       <form onSubmit="return validateMe();" action="<?php echo $form_url; ?>" method="post" enctype="multipart/form-data">
         <div class="box-body row">
-        <div class="form-group col-md-6">
-            <label for="ddlFloorNo"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_1'];?> :</label>
-            <select onchange="getActiveUnit(this.value)" name="ddlFloorNo" id="ddlFloorNo" class="form-control">
-              <option value="">--<?php echo $_data['add_new_form_field_text_2'];?>--</option>
-              <?php 
-				  	$result_floor = mysqli_query($link,"SELECT * FROM tbl_add_floor where branch_id= '".(int)$_SESSION['objLogin']['branch_id']."' order by fid ASC");
-					while($row_floor = mysqli_fetch_array($result_floor)){?>
-              <option <?php if($floor_no == $row_floor['fid']){echo 'selected';}?> value="<?php echo $row_floor['fid'];?>"><?php echo $row_floor['floor_no'];?></option>
-              <?php } ?>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="ddlUnitNo"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_3'];?> :</label>
-            <select name="ddlUnitNo" id="ddlUnitNo" onchange="getOwnerInfo(this.value);" class="form-control">
-              <option value="">--<?php echo $_data['add_new_form_field_text_4'];?>--</option>
-              <?php 
-				  	$result_unit = mysqli_query($link,"SELECT * FROM tbl_add_unit where floor_no = '".(int)$floor_no."' order by uid ASC");
-					while($row_unit = mysqli_fetch_array($result_unit)){?>
-              <option <?php if($unit_no == $row_unit['uid']){echo 'selected';}?> value="<?php echo $row_unit['uid'];?>"><?php echo $row_unit['unit_no'];?></option>
-              <?php } ?>
-            </select>
-          </div>
-          <div class="form-group col-md-12">
-            <label for="txtOwnerName"><?php echo $_data['add_new_form_field_text_6'];?> :</label>
-            <input readonly="readonly" type="text" name="txtOwnerName" style="font-weight:bold;color:red;" value="<?php echo $owner_name;?>" id="txtOwnerName" class="form-control" />
-            <input type="hidden" id="hdnOwnerdId" name="hdnOwnerdId" value="<?php echo $ownid;?>" />
-          </div>
            <div class="form-group col-md-6">
             <label for="ddlMonth"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_5'];?> :</label>
             <select name="ddlMonth" id="ddlMonth" class="form-control">
@@ -148,7 +120,7 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
             <label for="ddlYear"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_55'];?> :</label>
             <select name="ddlYear" id="ddlYear" class="form-control">
               <option value="">--<?php echo $_data['add_new_form_field_text_55'];?>--</option>
-              <?php for($i=2000;$i<=date('Y')+5;$i++){?>
+              <?php for($i=2023;$i<=date('Y');$i++){?>
               <option <?php if($xyear == $i){echo 'selected';}?> value="<?php echo $i;?>"><?php echo $i;?></option>
               <?php } ?>
             </select>
@@ -172,28 +144,6 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
             <div class="input-group">
             <input type="hidden" id="hdnGasBill" name="hdnGasBill" value="<?php echo $gas_bill;?>" />
             <input type="text" name="txtGasBill" onkeyup="calculateFairTotal1();" value="<?php echo $gas_bill;?>" id="txtGasBill" class="form-control" />
-            <div class="input-group-addon"><?php echo CURRENCY;?></div>
-            </div>
-          </div>
-           <div class="form-group col-md-6">
-            <label for="txtSecurityBill"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_11'];?> :</label>
-            <div class="input-group">
-            <input type="hidden" id="hdnSecurityBill" name="hdnSecurityBill" value="<?php echo $security_bill;?>" />
-            <input type="text" name="txtSecurityBill" onkeyup="calculateFairTotal1();" value="<?php echo $security_bill;?>" id="txtSecurityBill" class="form-control" />
-            <div class="input-group-addon"><?php echo CURRENCY;?></div>
-            </div>
-          </div>
-           <div class="form-group col-md-6">
-            <label for="txtUtilityBill"><?php echo $_data['add_new_form_field_text_12'];?> :</label>
-            <div class="input-group">
-            <input type="text" name="txtUtilityBill" onkeyup="calculateFairTotal1();" value="<?php echo $utility_bill;?>" id="txtUtilityBill" class="form-control" />
-            <div class="input-group-addon"><?php echo CURRENCY;?></div>
-            </div>
-          </div>
-           <div class="form-group col-md-6">
-            <label for="txtOtherBill"><?php echo $_data['add_new_form_field_text_13'];?> :</label>
-            <div class="input-group">
-            <input type="text" name="txtOtherBill" onkeyup="calculateFairTotal1();" value="<?php echo $other_bill;?>" id="txtOtherBill" class="form-control" />
             <div class="input-group-addon"><?php echo CURRENCY;?></div>
             </div>
           </div>
@@ -225,17 +175,7 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
 <!-- /.row -->
 <script type="text/javascript">
 function validateMe(){
-	if($("#ddlFloorNo").val() == ''){
-		alert("<?php echo $_data['v1']; ?>");
-		$("#ddlFloorNo").focus();
-		return false;
-	}
-	else if($("#ddlUnitNo").val() == ''){
-		alert("<?php echo $_data['v2']; ?>");
-		$("#ddlUnitNo").focus();
-		return false;
-	}
-	else if($("#ddlMonth").val() == ''){
+	if($("#ddlMonth").val() == ''){
 		alert("<?php echo $_data['v3']; ?>");
 		$("#ddlMonth").focus();
 		return false;
@@ -258,16 +198,6 @@ function validateMe(){
 	else if($("#txtGasBill").val() == ''){
 		alert("<?php echo $_data['v6']; ?>");
 		$("#txtGasBill").focus();
-		return false;
-	}
-	else if($("#txtSecurityBill").val() == ''){
-		alert("<?php echo $_data['v7']; ?>");
-		$("#txtSecurityBill").focus();
-		return false;
-	}
-	else if($("#txtUtilityBill").val() == ''){
-		alert("<?php echo $_data['v8']; ?>");
-		$("#txtUtilityBill").focus();
 		return false;
 	}
 	else if($("#txtIssueDate").val() == ''){

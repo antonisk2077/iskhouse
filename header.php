@@ -207,18 +207,7 @@ $page_name = $ams_helper->curPageUrlInfo('page');
           <li class="<?php if($page_name != '' && $page_name == 'add_m_committee'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>management/add_m_committee.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_member']; ?></a></li>
         </ul>
       </li>
-      <li class="treeview <?php if($page_name != '' && $page_name == 'add_fund' || $page_name == 'fund_list'){echo 'active';}?>"> <a href="#"> <i class="fa fa-money"></i> <span><?php echo $_data['menu_fund']; ?></span> <i class="fa fa-angle-left pull-right"></i> </a>
-        <ul class="treeview-menu">
-          <li class="<?php if($page_name != '' && $page_name == 'fund_list'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>fund/fund_list.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_fund_list']; ?></a></li>
-          <li class="<?php if($page_name != '' && $page_name == 'add_fund'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>fund/add_fund.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_fund']; ?></a></li>
-        </ul>
-      </li>
-      <li class="treeview <?php if($page_name != '' && $page_name == 'add_bill' || $page_name == 'bill_list'){echo 'active';}?>"> <a href="#"> <i class="fa fa-bank"></i> <span><?php echo $_data['menu_bill'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
-        <ul class="treeview-menu">
-          <li class="<?php if($page_name != '' && $page_name == 'bill_list'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>bill/bill_list.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_bill_list'];?></a></li>
-          <li class="<?php if($page_name != '' && $page_name == 'add_bill'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>bill/add_bill.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_add_bill'];?></a></li>
-        </ul>
-      </li>
+      
       <li class="treeview <?php if($page_name != '' && $page_name == 'addcomplain' || $page_name == 'complainlist'){echo 'active';}?>"> <a href="#"> <i class="fa fa-comments"></i> <span><?php echo $_data['menu_complain'];?></span> <i class="fa fa-angle-left pull-right"></i> </a>
         <ul class="treeview-menu">
           <li class="<?php if($page_name != '' && $page_name == 'complainlist'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>complain/complainlist.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_complain_list'];?></a></li>
@@ -252,8 +241,7 @@ $page_name = $ams_helper->curPageUrlInfo('page');
           <li class="<?php if($page_name != '' && $page_name == 'visitors_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>report/visitors_report.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_visitors_report'];?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'complain_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>report/complain_report.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_complain_report'];?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'unit_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>report/unit_report.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_unit_status_report'];?></a></li>
-          <li class="<?php if($page_name != '' && $page_name == 'fund_status'){echo 'active';}?>"><a target="_blank" href="<?php echo WEB_URL; ?>report/fund_status.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_fund_status'];?></a></li>
-          <li class="<?php if($page_name != '' && $page_name == 'bill_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>report/bill_report.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_bill_report'];?></a></li>
+          
           <li class="<?php if($page_name != '' && $page_name == 'salary_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>report/salary_report.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['salary_report_text'];?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'expense_report'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>report/expense_report.php"><i class="fa fa-angle-double-right"></i>Expense report</a></li>
 
@@ -276,8 +264,7 @@ $page_name = $ams_helper->curPageUrlInfo('page');
               <li class="<?php if($page_name != '' && $page_name == 'addbranch'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>branch/addbranch.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['add_branch'];?></a></li>
             </ul>
           </li>
-          <li class="<?php if($page_name != '' && $page_name == 'bill_setup'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>setting/bill_setup.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_bill_setup'];?></a></li>
-		  <li class="<?php if($page_name != '' && $page_name == 'utility_bill_setup'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>setting/utility_bill_setup.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_utility_bill'];?></a></li>
+          
           <li class="<?php if($page_name != '' && $page_name == 'member_type_setup'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>setting/member_type_setup.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_management_member_type'];?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'month_setup'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>setting/month_setup.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_month_setup'];?></a></li>
           <li class="<?php if($page_name != '' && $page_name == 'year_setup'){echo 'active';}?>"><a href="<?php echo WEB_URL; ?>setting/year_setup.php"><i class="fa fa-angle-double-right"></i><?php echo $_data['menu_year_setup'];?></a></li>

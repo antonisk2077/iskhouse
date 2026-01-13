@@ -55,87 +55,173 @@ if(isset($_GET['m']) && $_GET['m'] == 'up'){
     <div align="right" style="margin-bottom:1%;"> <a class="btn btn-success" data-toggle="tooltip" href="<?php echo WEB_URL; ?>rent/addrent.php" data-original-title="<?php echo $_data['add_new_rent_breadcam'];?>"><i class="fa fa-plus"></i></a> <a class="btn btn-success" data-toggle="tooltip" href="<?php echo WEB_URL; ?>dashboard.php" data-original-title="<?php echo $_data['home_breadcam'];?>"><i class="fa fa-dashboard"></i></a> </div>
     <div class="box box-success">
       <div class="box-header">
-        <h3 class="box-title"><?php echo $_data['renter_list'];?></h3>
+        <h3 class="box-title">Tenant</h3>
       </div>
-      <!-- /.box-header -->
       <div class="box-body">
-        <table class="table sakotable table-bordered table-striped dt-responsive">
-          <thead>
-            <tr>
-              <th><?php echo $_data['add_new_form_field_text_0'];?></th>
-              <th><?php echo $_data['add_new_form_field_text_1'];?></th>
-              <th><?php echo $_data['add_new_form_field_text_4'];?></th>
-              <th><?php echo $_data['add_new_form_field_text_8'];?></th>
-              <th><?php echo $_data['add_new_form_field_text_9'];?></th>
-              <th><?php echo $_data['add_new_form_field_text_10'];?></th>
-              <th>Check-In Date</th>
-              <th>Check-Out Date</th>
-              <th><?php echo $_data['add_new_form_field_text_14'];?></th>
-              <th><?php echo $_data['action_text'];?></th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php
-				$result = mysqli_query($link,"Select *,f.floor_no as ffloor,u.unit_no from tbl_add_rent r inner join tbl_add_floor f on f.fid = r.r_floor_no inner join tbl_add_unit u on u.uid = r.r_unit_no where r.branch_id = " . (int)$_SESSION['objLogin']['branch_id'] . " order by r.r_unit_no asc");
-				while($row = mysqli_fetch_array($result)){
-					$image = WEB_URL . 'img/no_image.jpg';	
-					if(file_exists(ROOT_PATH . '/img/upload/' . $row['image']) && $row['image'] != ''){
-						$image = WEB_URL . 'img/upload/' . $row['image'];
-					}
-				
-				?>
-            <tr>
-              <td><img class="photo_img_round" style="width:50px;height:50px;" src="<?php echo $image;  ?>" /></td>
-              <td><?php echo $row['r_name']; ?></td>
-              <td><?php echo $row['r_contact']; ?></td>
-              <td><label class="label label-success ams_label"><?php echo $row['unit_no']; ?></label></td>
-              <td><?php echo $ams_helper->currency($localization, $row['r_advance']); ?></td>
-			  <td><?php echo $ams_helper->currency($localization, $row['r_rent_pm']); ?></td>
-			  <td><?php echo $row['added_date']; ?></td>
-			  <td><?php echo $row['r_date_checkout']; ?></td>
-              <td><?php if($row['r_status'] == '1'){echo '<label class="label label-success ams_label">'.$_data['add_new_form_field_text_16'].'</label>';} else{echo '<label class="label label-danger ams_label">'.$_data['add_new_form_field_text_17'].'</label>';}?>
-              <td><a class="btn btn-success ams_btn_special" data-toggle="tooltip" href="javascript:;" onClick="$('#nurse_view_<?php echo $row['rid']; ?>').modal('show');" data-original-title="<?php echo $_data['view_text'];?>"><i class="fa fa-eye"></i></a> <a class="btn btn-warning ams_btn_special" data-toggle="tooltip" href="<?php echo WEB_URL;?>rent/addrent.php?id=<?php echo $row['rid']; ?>" data-original-title="<?php echo $_data['edit_text'];?>"><i class="fa fa-pencil"></i></a> <a class="btn btn-danger ams_btn_special" data-toggle="tooltip" onClick="deleteRent(<?php echo $row['rid']; ?>);" href="javascript:;" data-original-title="<?php echo $_data['delete_text'];?>"><i class="fa fa-trash-o"></i></a>
-                <div id="nurse_view_<?php echo $row['rid']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header green_header">
-                        <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
-                        <h3 class="modal-title"><?php echo $_data['rented_details'];?></h3>
-                      </div>
-                      <div class="modal-body model_view" align="center">&nbsp;
-                        <div><img style="width:200px;height:200px;border-radius:200px;" src="<?php echo $image;  ?>" /></div>
-                        <div class="model_title"><?php echo $row['r_name']; ?></div>
-                      </div>
-                      <div class="modal-body">
-                        <h3 style="text-decoration:underline;"><?php echo $_data['details_information'];?></h3>
-                        <div class="row">
-                          <div class="col-xs-6"> <b><?php echo $_data['add_new_form_field_text_1'];?> :</b> <?php echo $row['r_name']; ?><br/>
-                            <b><?php echo $_data['add_new_form_field_text_2'];?> :</b> <?php echo $row['r_email']; ?><br/>
-                            <b><?php echo $_data['add_new_form_field_text_3'];?> :</b> <?php echo $converter->decode($row['r_password']); ?><br/>
-                            <b><?php echo $_data['add_new_form_field_text_4'];?> :</b> <?php echo $row['r_contact']; ?><br/>
-                            <b><?php echo $_data['add_new_form_field_text_5'];?> :</b> <?php echo $row['r_address']; ?><br/>
-                            <b><?php echo $_data['add_new_form_field_text_6'];?> :</b> <?php echo $row['r_nid']; ?><br/>
+        <ul class="nav nav-tabs">
+          <li class="active"><a data-toggle="tab" href="#tenant-active">Tenant Active</a></li>
+          <li><a data-toggle="tab" href="#tenant-inactive">Tenant In Active</a></li>
+        </ul>
+        <div class="tab-content" style="margin-top:12px;">
+          <div id="tenant-active" class="tab-pane fade in active">
+            <table class="table sakotable table-bordered table-striped dt-responsive">
+              <thead>
+                <tr>
+                  <th><?php echo $_data['add_new_form_field_text_0'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_1'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_4'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_8'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_9'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_10'];?></th>
+                  <th>Check-In Date</th>
+                  <th>Check-Out Date</th>
+                  <th><?php echo $_data['add_new_form_field_text_14'];?></th>
+                  <th><?php echo $_data['action_text'];?></th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+					$result = mysqli_query($link,"Select *,f.floor_no as ffloor,u.unit_no from tbl_add_rent r inner join tbl_add_floor f on f.fid = r.r_floor_no inner join tbl_add_unit u on u.uid = r.r_unit_no where r.branch_id = " . (int)$_SESSION['objLogin']['branch_id'] . " and r.r_status = 1 order by r.r_unit_no asc");
+					while($row = mysqli_fetch_array($result)){
+						$image = WEB_URL . 'img/no_image.jpg';	
+						if(file_exists(ROOT_PATH . '/img/upload/' . $row['image']) && $row['image'] != ''){
+							$image = WEB_URL . 'img/upload/' . $row['image'];
+						}
+					
+					?>
+                <tr>
+                  <td><img class="photo_img_round" style="width:50px;height:50px;" src="<?php echo $image;  ?>" /></td>
+                  <td><?php echo $row['r_name']; ?></td>
+                  <td><?php echo $row['r_contact']; ?></td>
+                  <td><label class="label label-success ams_label"><?php echo $row['unit_no']; ?></label></td>
+                  <td><?php echo $ams_helper->currency($localization, $row['r_advance']); ?></td>
+				  <td><?php echo $ams_helper->currency($localization, $row['r_rent_pm']); ?></td>
+				  <td><?php echo $row['added_date']; ?></td>
+				  <td><?php echo $row['r_gone_date']; ?></td>
+                  <td><?php echo '<label class="label label-success ams_label">'.$_data['add_new_form_field_text_16'].'</label>';?>
+                  <td><a class="btn btn-success ams_btn_special" data-toggle="tooltip" href="javascript:;" onClick="$('#nurse_view_<?php echo $row['rid']; ?>').modal('show');" data-original-title="<?php echo $_data['view_text'];?>"><i class="fa fa-eye"></i></a> <a class="btn btn-warning ams_btn_special" data-toggle="tooltip" href="<?php echo WEB_URL;?>rent/addrent.php?id=<?php echo $row['rid']; ?>" data-original-title="<?php echo $_data['edit_text'];?>"><i class="fa fa-pencil"></i></a> <a class="btn btn-danger ams_btn_special" data-toggle="tooltip" onClick="deleteRent(<?php echo $row['rid']; ?>);" href="javascript:;" data-original-title="<?php echo $_data['delete_text'];?>"><i class="fa fa-trash-o"></i></a>
+                    <div id="nurse_view_<?php echo $row['rid']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header green_header">
+                            <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
+                            <h3 class="modal-title"><?php echo $_data['rented_details'];?></h3>
                           </div>
-                          <div class="col-xs-6"> <b><?php echo $_data['add_new_form_field_text_7'];?> :</b> <?php echo $row['ffloor']; ?><br/>
-                            <b><?php echo $_data['add_new_form_field_text_8'];?> :</b> <?php echo $row['unit_no']; ?><br/>
-                            <b><?php echo $_data['add_new_form_field_text_9'];?> : </b> <?php echo $ams_helper->currency($localization, $row['r_advance']); ?><br/>
-							<b><?php echo $_data['add_new_form_field_text_10'];?> : </b> <?php echo $ams_helper->currency($localization, $row['r_rent_pm']); ?><br/>
-                            <b><?php echo $_data['add_new_form_field_text_11'];?> :</b> <?php echo $row['r_date']; ?><br/>
-                            <b><?php echo $_data['add_new_form_field_text_14'];?> :</b>
-                            <?php if($row['r_status'] == '1'){echo $_data['add_new_form_field_text_16'];} else{echo $_data['add_new_form_field_text_17'];}?><br/>
-                            <?php $img_url = $row['image_id'];?>					
+                          <div class="modal-body model_view" align="center">&nbsp;
+                            <div><img style="width:200px;height:200px;border-radius:200px;" src="<?php echo $image;  ?>" /></div>
+                            <div class="model_title"><?php echo $row['r_name']; ?></div>
+                          </div>
+                          <div class="modal-body">
+                            <h3 style="text-decoration:underline;"><?php echo $_data['details_information'];?></h3>
+                            <div class="row">
+                              <div class="col-xs-6"> <b><?php echo $_data['add_new_form_field_text_1'];?> :</b> <?php echo $row['r_name']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_2'];?> :</b> <?php echo $row['r_email']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_3'];?> :</b> <?php echo $converter->decode($row['r_password']); ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_4'];?> :</b> <?php echo $row['r_contact']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_5'];?> :</b> <?php echo $row['r_address']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_6'];?> :</b> <?php echo $row['r_nid']; ?><br/>
+                              </div>
+                              <div class="col-xs-6"> <b><?php echo $_data['add_new_form_field_text_7'];?> :</b> <?php echo $row['ffloor']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_8'];?> :</b> <?php echo $row['unit_no']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_9'];?> : </b> <?php echo $ams_helper->currency($localization, $row['r_advance']); ?><br/>
+								<b><?php echo $_data['add_new_form_field_text_10'];?> : </b> <?php echo $ams_helper->currency($localization, $row['r_rent_pm']); ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_11'];?> :</b> <?php echo $row['r_date']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_14'];?> :</b>
+                                <?php echo $_data['add_new_form_field_text_16'];?><br/>
+                                <?php $img_url = $row['image_id'];?>					
 	<b>Image ID :</b><?php echo !empty($row['image_id']) ? '<a target="_blank" href="'.WEB_URL.'/img/upload/'.$img_url.'" > Open Proof</a>' : ''; ?><br/>
+                              </div>
+                            </div>
                           </div>
                         </div>
+                        <!-- /.modal-content -->
                       </div>
-                    </div>
-                    <!-- /.modal-content -->
-                  </div>
-                </div></td>
-            </tr>
-            <?php } mysqli_close($link);$link = NULL; ?>
-          </tbody>
-        </table>
+                    </div></td>
+                </tr>
+                <?php } ?>
+              </tbody>
+            </table>
+          </div>
+          <div id="tenant-inactive" class="tab-pane fade">
+            <table class="table sakotable table-bordered table-striped dt-responsive">
+              <thead>
+                <tr>
+                  <th><?php echo $_data['add_new_form_field_text_0'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_1'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_4'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_8'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_9'];?></th>
+                  <th><?php echo $_data['add_new_form_field_text_10'];?></th>
+                  <th>Check-In Date</th>
+                  <th>Check-Out Date</th>
+                  <th><?php echo $_data['add_new_form_field_text_14'];?></th>
+                  <th><?php echo $_data['action_text'];?></th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+					$result = mysqli_query($link,"Select *,f.floor_no as ffloor,u.unit_no from tbl_add_rent r inner join tbl_add_floor f on f.fid = r.r_floor_no inner join tbl_add_unit u on u.uid = r.r_unit_no where r.branch_id = " . (int)$_SESSION['objLogin']['branch_id'] . " and r.r_status = 0 order by r.r_unit_no asc");
+					while($row = mysqli_fetch_array($result)){
+						$image = WEB_URL . 'img/no_image.jpg';	
+						if(file_exists(ROOT_PATH . '/img/upload/' . $row['image']) && $row['image'] != ''){
+							$image = WEB_URL . 'img/upload/' . $row['image'];
+						}
+					
+					?>
+                <tr>
+                  <td><img class="photo_img_round" style="width:50px;height:50px;" src="<?php echo $image;  ?>" /></td>
+                  <td><?php echo $row['r_name']; ?></td>
+                  <td><?php echo $row['r_contact']; ?></td>
+                  <td><label class="label label-success ams_label"><?php echo $row['unit_no']; ?></label></td>
+                  <td><?php echo $ams_helper->currency($localization, $row['r_advance']); ?></td>
+				  <td><?php echo $ams_helper->currency($localization, $row['r_rent_pm']); ?></td>
+				  <td><?php echo $row['added_date']; ?></td>
+				  <td><?php echo $row['r_gone_date']; ?></td>
+                  <td><?php echo '<label class="label label-danger ams_label">'.$_data['add_new_form_field_text_17'].'</label>';?>
+                  <td><a class="btn btn-success ams_btn_special" data-toggle="tooltip" href="javascript:;" onClick="$('#nurse_view_<?php echo $row['rid']; ?>').modal('show');" data-original-title="<?php echo $_data['view_text'];?>"><i class="fa fa-eye"></i></a> <a class="btn btn-warning ams_btn_special" data-toggle="tooltip" href="<?php echo WEB_URL;?>rent/addrent.php?id=<?php echo $row['rid']; ?>" data-original-title="<?php echo $_data['edit_text'];?>"><i class="fa fa-pencil"></i></a> <a class="btn btn-danger ams_btn_special" data-toggle="tooltip" onClick="deleteRent(<?php echo $row['rid']; ?>);" href="javascript:;" data-original-title="<?php echo $_data['delete_text'];?>"><i class="fa fa-trash-o"></i></a>
+                    <div id="nurse_view_<?php echo $row['rid']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header green_header">
+                            <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
+                            <h3 class="modal-title"><?php echo $_data['rented_details'];?></h3>
+                          </div>
+                          <div class="modal-body model_view" align="center">&nbsp;
+                            <div><img style="width:200px;height:200px;border-radius:200px;" src="<?php echo $image;  ?>" /></div>
+                            <div class="model_title"><?php echo $row['r_name']; ?></div>
+                          </div>
+                          <div class="modal-body">
+                            <h3 style="text-decoration:underline;"><?php echo $_data['details_information'];?></h3>
+                            <div class="row">
+                              <div class="col-xs-6"> <b><?php echo $_data['add_new_form_field_text_1'];?> :</b> <?php echo $row['r_name']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_2'];?> :</b> <?php echo $row['r_email']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_3'];?> :</b> <?php echo $converter->decode($row['r_password']); ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_4'];?> :</b> <?php echo $row['r_contact']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_5'];?> :</b> <?php echo $row['r_address']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_6'];?> :</b> <?php echo $row['r_nid']; ?><br/>
+                              </div>
+                              <div class="col-xs-6"> <b><?php echo $_data['add_new_form_field_text_7'];?> :</b> <?php echo $row['ffloor']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_8'];?> :</b> <?php echo $row['unit_no']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_9'];?> : </b> <?php echo $ams_helper->currency($localization, $row['r_advance']); ?><br/>
+								<b><?php echo $_data['add_new_form_field_text_10'];?> : </b> <?php echo $ams_helper->currency($localization, $row['r_rent_pm']); ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_11'];?> :</b> <?php echo $row['r_date']; ?><br/>
+                                <b><?php echo $_data['add_new_form_field_text_14'];?> :</b>
+                                <?php echo $_data['add_new_form_field_text_17'];?><br/>
+                                <?php $img_url = $row['image_id'];?>					
+	<b>Image ID :</b><?php echo !empty($row['image_id']) ? '<a target="_blank" href="'.WEB_URL.'/img/upload/'.$img_url.'" > Open Proof</a>' : ''; ?><br/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- /.modal-content -->
+                      </div>
+                    </div></td>
+                </tr>
+                <?php } mysqli_close($link);$link = NULL; ?>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       <!-- /.box-body -->
     </div>

@@ -18,4 +18,8 @@ $_data['select_year'] 					= "Select Year";
 $_data['text_1'] 						= "Maintenance Title";
 $_data['text_2'] 						= "Amount"; 
 $_data['text_3'] 						= "Details";
+$_data['text_4'] 						= "Location";
+$_data['text_5'] 						= "Select Location";
+$_data['text_6'] 						= "Other";
+$_data['text_7'] 						= "Other Location";
 ?>

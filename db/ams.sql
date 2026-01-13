@@ -295,6 +295,7 @@ CREATE TABLE `tbl_add_fair` (
   `paid_date` varchar(25) DEFAULT NULL,
   `branch_id` int(11) NOT NULL,
   `bill_status` tinyint(1) NOT NULL DEFAULT 0,
+  `images_proof` text NOT NULL,
   `added_date` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -363,6 +364,7 @@ INSERT INTO `tbl_add_fund` (`fund_id`, `owner_id`, `month_id`, `xyear`, `f_date`
 CREATE TABLE `tbl_add_maintenance_cost` (
   `mcid` int(11) NOT NULL,
   `m_title` varchar(200) NOT NULL,
+  `m_location` varchar(200) NOT NULL DEFAULT '',
   `m_date` varchar(200) NOT NULL,
   `m_amount` decimal(15,2) NOT NULL DEFAULT 0.00,
   `m_details` varchar(200) NOT NULL,
@@ -376,8 +378,8 @@ CREATE TABLE `tbl_add_maintenance_cost` (
 -- A tábla adatainak kiíratása `tbl_add_maintenance_cost`
 --
 
-INSERT INTO `tbl_add_maintenance_cost` (`mcid`, `m_title`, `m_date`, `m_amount`, `m_details`, `xmonth`, `xyear`, `branch_id`, `added_date`) VALUES
-(7, 'Light', '27/08/2019', 50.00, 'OK', 8, 11, 8, '2019-08-27 04:39:09');
+INSERT INTO `tbl_add_maintenance_cost` (`mcid`, `m_title`, `m_location`, `m_date`, `m_amount`, `m_details`, `xmonth`, `xyear`, `branch_id`, `added_date`) VALUES
+(7, 'Light', '', '27/08/2019', 50.00, 'OK', 8, 11, 8, '2019-08-27 04:39:09');
 
 -- --------------------------------------------------------
 
@@ -549,6 +551,7 @@ CREATE TABLE `tbl_add_rent` (
   `r_email` varchar(200) NOT NULL,
   `r_contact` varchar(200) NOT NULL,
   `r_address` varchar(200) NOT NULL,
+  `r_notes` text NOT NULL,
   `r_nid` varchar(200) NOT NULL,
   `r_floor_no` varchar(200) NOT NULL,
   `r_unit_no` varchar(200) NOT NULL,
@@ -558,6 +561,7 @@ CREATE TABLE `tbl_add_rent` (
   `r_gone_date` varchar(200) DEFAULT NULL,
   `r_password` varchar(100) NOT NULL,
   `image` varchar(200) NOT NULL,
+  `image_id` varchar(200) NOT NULL DEFAULT '',
   `r_status` int(1) NOT NULL DEFAULT 1,
   `r_month` int(11) NOT NULL,
   `r_year` int(11) NOT NULL,

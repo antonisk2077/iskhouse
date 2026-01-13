@@ -18,6 +18,10 @@ $_data['select_year'] 					= "Select Year";
 $_data['text_1'] 						= "Maintenance Title";
 $_data['text_2'] 						= "Amount"; 
 $_data['text_3'] 						= "Details";
+$_data['text_4'] 						= "Location";
+$_data['text_5'] 						= "Select Location";
+$_data['text_6'] 						= "Other";
+$_data['text_7'] 						= "Other Location";
 
 //validation
 $_data['v1'] 							= "Select Issue Date.";
@@ -26,4 +30,6 @@ $_data['v3'] 							= "Select Cost Year.";
 $_data['v4'] 							= "Maintenance Title Required.";
 $_data['v5'] 							= "Maintenance Amount Required.";
 $_data['v6'] 							= "Maintenance Details Required.";
+$_data['v7'] 							= "Select Location.";
+$_data['v8'] 							= "Other Location Required.";
 ?>
