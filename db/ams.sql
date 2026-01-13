@@ -192,10 +192,12 @@ CREATE TABLE `tbl_add_complain` (
   `c_month` varchar(50) NOT NULL,
   `c_year` varchar(50) NOT NULL,
   `c_userid` int(11) NOT NULL,
+  `c_unit_no` int(11) NOT NULL DEFAULT 0,
   `branch_id` int(11) NOT NULL,
   `job_status` int(1) NOT NULL DEFAULT 0,
   `assign_employee_id` int(11) DEFAULT 0,
   `solution` varchar(500) NOT NULL,
+  `image_before_sol` varchar(500) DEFAULT NULL,
   `complain_by` varchar(100) DEFAULT NULL,
   `person_name` varchar(250) DEFAULT NULL,
   `person_email` varchar(100) DEFAULT NULL,
@@ -207,10 +209,10 @@ CREATE TABLE `tbl_add_complain` (
 -- A tábla adatainak kiíratása `tbl_add_complain`
 --
 
-INSERT INTO `tbl_add_complain` (`complain_id`, `c_title`, `c_description`, `c_date`, `c_month`, `c_year`, `c_userid`, `branch_id`, `job_status`, `assign_employee_id`, `solution`, `complain_by`, `person_name`, `person_email`, `person_contact`, `added_date`) VALUES
-(35, 'Water Problem', 'We need to solve water issue soon.', '27/08/2019', '8', '2019', 0, 8, 0, 12, '', NULL, NULL, NULL, NULL, '2019-08-27 04:38:09'),
-(36, 'Flat color issue', 'How flat color condition is really bad kindly solve it.', '28/08/2019', '8', '2019', 20, 8, 0, 0, '', 'tenant', 'Jim Cary', 'jimcary@yahoo.com', '+8801679110711', '2019-08-27 19:29:06'),
-(37, 'Queja de prueba', 'prueba de rigor', '06/08/2020', '8', '2020', 0, 7, 1, 0, 'Primera prueba \nEn progreso', NULL, NULL, NULL, NULL, '2020-08-06 21:19:03');
+INSERT INTO `tbl_add_complain` (`complain_id`, `c_title`, `c_description`, `c_date`, `c_month`, `c_year`, `c_userid`, `c_unit_no`, `branch_id`, `job_status`, `assign_employee_id`, `solution`, `complain_by`, `person_name`, `person_email`, `person_contact`, `added_date`) VALUES
+(35, 'Water Problem', 'We need to solve water issue soon.', '27/08/2019', '8', '2019', 0, 0, 8, 0, 12, '', NULL, NULL, NULL, NULL, '2019-08-27 04:38:09'),
+(36, 'Flat color issue', 'How flat color condition is really bad kindly solve it.', '28/08/2019', '8', '2019', 20, 0, 8, 0, 0, '', 'tenant', 'Jim Cary', 'jimcary@yahoo.com', '+8801679110711', '2019-08-27 19:29:06'),
+(37, 'Queja de prueba', 'prueba de rigor', '06/08/2020', '8', '2020', 0, 0, 7, 1, 0, 'Primera prueba \nEn progreso', NULL, NULL, NULL, NULL, '2020-08-06 21:19:03');
 
 -- --------------------------------------------------------
 

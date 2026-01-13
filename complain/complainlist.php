@@ -23,6 +23,8 @@ if(isset($_GET['m']) && $_GET['m'] == 'up'){
 	$addinfo = 'block';
 	$msg = $_data['text_9'];
 }
+$status = (isset($_GET['status']) && $_GET['status'] === 'completed') ? 'completed' : 'progress';
+$status_sql = ($status === 'completed') ? " and c.job_status = 3" : " and c.job_status <> 3";
 $employee_list = array();
 $result_emp = mysqli_query($link,"Select *,m.member_type from tbl_add_employee e inner join tbl_add_member_type m on m.member_id = e.e_designation where e.e_status = 1 and e.branch_id = '" . (int)$_SESSION['objLogin']['branch_id'] . "' order by e.e_name ASC");
 while($row_emp = mysqli_fetch_assoc($result_emp)){
@@ -59,10 +61,15 @@ while($row_emp = mysqli_fetch_assoc($result_emp)){
       </div>
       <!-- /.box-header -->
       <div class="box-body">
+        <ul class="nav nav-tabs" role="tablist" style="margin-bottom:15px;">
+          <li role="presentation" class="<?php echo ($status === 'progress') ? 'active' : ''; ?>"><a href="<?php echo WEB_URL; ?>complain/complainlist.php?status=progress"><?php echo $_data['t_status_in_progress'];?></a></li>
+          <li role="presentation" class="<?php echo ($status === 'completed') ? 'active' : ''; ?>"><a href="<?php echo WEB_URL; ?>complain/complainlist.php?status=completed"><?php echo $_data['t_status_completed'];?></a></li>
+        </ul>
         <table class="table sakotable table-bordered table-striped dt-responsive">
           <thead>
             <tr>
-              <th>Room</th>
+              <th><?php echo $_data['text_13'];?></th>
+              <th><?php echo $_data['text_5'];?></th>
 			  <th><?php echo $_data['text_7'];?></th>
 			  <th><?php echo $_data['t_text_2'];?></th>
 			  <th><?php echo $_data['assign_job'];?></th>
@@ -71,9 +78,10 @@ while($row_emp = mysqli_fetch_assoc($result_emp)){
           </thead>
           <tbody>
             <?php
-				$result = mysqli_query($link,"Select *,m.month_name from tbl_add_complain c inner join tbl_add_month_setup m on m.m_id = c.c_month where c.branch_id = '" . (int)$_SESSION['objLogin']['branch_id'] . "' order by complain_id DESC");
+				$result = mysqli_query($link,"Select c.*,m.month_name,u.unit_no from tbl_add_complain c inner join tbl_add_month_setup m on m.m_id = c.c_month left join tbl_add_unit u on u.uid = c.c_unit_no where c.branch_id = '" . (int)$_SESSION['objLogin']['branch_id'] . "'" . $status_sql . " order by complain_id DESC");
 				while($row = mysqli_fetch_array($result)){?>
             <tr>
+              <td><?php echo $row['unit_no'] ?: '-'; ?></td>
               <td><?php echo $row['c_title']; ?></td>
 			  <td><?php echo $row['c_date']; ?></td>
 			  <td>

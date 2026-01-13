@@ -13,9 +13,10 @@ $c_date = '';
 $c_month = '';
 $c_year = '';
 $c_userid = '';
+$c_unit_no = 0;
 $image_before_sol = "";
 $branch_id = '';
-$title = $_data['text_1'];
+$title = $_data['text_2'];
 $button_text = $_data['save_button_text'];
 $successful_msg = $_data['text_8'];
 $form_url = WEB_URL . "complain/addcomplain.php";
@@ -35,6 +36,10 @@ function NewGuid() {
 if(isset($_POST['txtCTitle'])){
 	$xmonth = date('m');
 	$xyear = date('Y');
+	$txt_title = isset($_POST['txtCTitle']) ? mysqli_real_escape_string($link, $_POST['txtCTitle']) : '';
+	$txt_description = isset($_POST['txtCDescription']) ? mysqli_real_escape_string($link, $_POST['txtCDescription']) : '';
+	$txt_date = isset($_POST['txtCDate']) ? mysqli_real_escape_string($link, $_POST['txtCDate']) : '';
+	$unit_no = isset($_POST['ddlUnitNo']) ? (int)$_POST['ddlUnitNo'] : 0;
 	if(isset($_POST['hdn']) && $_POST['hdn'] == '0'){
             $URL_IMAGE = "";
             if(isset($_POST['image_before_work']) && !empty($_POST['image_before_work'])){
@@ -48,7 +53,7 @@ if(isset($_POST['txtCTitle'])){
                 $URL_IMAGE = WEB_URL . 'img/upload/' . $filename;
 			 }
 	    
-		$sql = "INSERT INTO tbl_add_complain(c_title,c_description, c_date, c_month,c_year,c_userid,branch_id,image_before_sol) values('$_POST[txtCTitle]','$_POST[txtCDescription]','$_POST[txtCDate]',$xmonth,$xyear,'".(int)$_SESSION['objLogin']['aid']."','" . $_SESSION['objLogin']['branch_id'] . "','".$URL_IMAGE."')";
+		$sql = "INSERT INTO tbl_add_complain(c_title,c_description,c_date,c_month,c_year,c_userid,c_unit_no,branch_id,solution,image_before_sol) values('".$txt_title."','".$txt_description."','".$txt_date."',".$xmonth.",".$xyear.",'".(int)$_SESSION['objLogin']['aid']."','".$unit_no."','" . $_SESSION['objLogin']['branch_id'] . "','','".$URL_IMAGE."')";
 		//echo $sql;
 		//die();
 		mysqli_query($link,$sql);
@@ -72,7 +77,7 @@ if(isset($_POST['txtCTitle'])){
 		     $sql_img = "";
 		 }	    
 	    
-		$sql = "UPDATE `tbl_add_complain` SET `c_title`='".$_POST['txtCTitle']."',`c_description`='".$_POST['txtCDescription']."',`c_date`='".$_POST['txtCDate']."' $sql_img WHERE complain_id='".$_GET['id']."'";
+		$sql = "UPDATE `tbl_add_complain` SET `c_title`='".$txt_title."',`c_description`='".$txt_description."',`c_date`='".$txt_date."',`c_unit_no`='".$unit_no."' $sql_img WHERE complain_id='".$_GET['id']."'";
 		//echo $sql;
 		//die();
 		mysqli_query($link,$sql);
@@ -88,8 +93,9 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
 		$c_title = $row['c_title'];
 		$c_description = $row['c_description'];
 		$c_date = $row['c_date'];
+		$c_unit_no = $row['c_unit_no'];
 		$hdnid = $_GET['id'];
-		$title = $_data['text_1_1'];
+		$title = $_data['text_2'];
 		$button_text = $_data['update_button_text'];
 		$image_before_sol = $row['image_before_sol'];
 		$successful_msg = $_data['text_9'];
@@ -129,6 +135,17 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
           <div class="form-group">
             <label for="txtCDescription"><span style="color:red;">*</span> <?php echo $_data['text_6'];?> :</label>
             <textarea name="txtCDescription" id="txtCDescription" class="form-control"><?php echo $c_description;?></textarea>
+          </div>
+          <div class="form-group">
+            <label for="ddlUnitNo"><span style="color:red;">*</span> <?php echo $_data['text_11'];?> :</label>
+            <select name="ddlUnitNo" id="ddlUnitNo" class="form-control">
+              <option value="">--<?php echo $_data['text_12'];?>--</option>
+              <?php
+				  $result_unit = mysqli_query($link,"SELECT uid, unit_no FROM tbl_add_unit WHERE branch_id = " . (int)$_SESSION['objLogin']['branch_id'] . " ORDER BY unit_no ASC");
+					while($row_unit = mysqli_fetch_array($result_unit)){?>
+              <option <?php if($c_unit_no == $row_unit['uid']){echo 'selected';}?> value="<?php echo $row_unit['uid'];?>"><?php echo $row_unit['unit_no'];?></option>
+              <?php } ?>
+            </select>
           </div>
         <div class="form-group">
                 <label for="Prsnttxtarea">Image Before Work :</label>
@@ -191,6 +208,11 @@ function validateMe(){
 	else if($("#txtCDescription").val() == ''){
 		alert("<?php echo $_data['r2']; ?>");
 		$("#txtCDescription").focus();
+		return false;
+	}
+	else if($("#ddlUnitNo").val() == ''){
+		alert("<?php echo $_data['r4']; ?>");
+		$("#ddlUnitNo").focus();
 		return false;
 	}
 	else if($("#txtCDate").val() == ''){
