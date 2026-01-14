@@ -670,34 +670,14 @@ function getEmployeeData(unit_id){
 //for total fair collection
 function calculateFairTotal(){
 	var box_1 = 0.00;
-	var box_2 = 0.00;
-	var box_3 = 0.00;
-	var box_4 = 0.00;
-	var box_5 = 0.00;
-	var box_6 = 0.00;
 	var box_7 = 0.00;
 	if($("#txtRent").val() != ''){
 		box_1 = parseFloat($("#txtRent").val());
 	}
-	if($("#txtWaterBill").val() != ''){
-		box_2 = parseFloat($("#txtWaterBill").val());
-	}
-	if($("#txtElectricBill").val() != ''){
-		box_3 = parseFloat($("#txtElectricBill").val());
-	}
-	if($("#txtGasBill").val() != ''){
-		box_4 = parseFloat($("#txtGasBill").val());
-	}
-	if($("#txtSecurityBill").val() != ''){
-		box_5 = parseFloat($("#txtSecurityBill").val());
-	}
-	if($("#txtUtilityBill").val() != ''){
-		box_6 = parseFloat($("#txtUtilityBill").val());
-	}
 	if($("#txtOtherBill").val() != ''){
 		box_7 = parseFloat($("#txtOtherBill").val());
 	}
-	var total = parseFloat(box_1 + box_2 + box_3 + box_4 + box_5 + box_6 + box_7);
+	var total = parseFloat(box_1 + box_7);
 	total = total.toFixed(2);
 	$("#txtTotalRent").val(total);
 	$("#hdnTotal").val(total);

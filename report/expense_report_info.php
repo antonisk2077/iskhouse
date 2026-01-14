@@ -52,6 +52,7 @@ function printContent(area,title){
 			<table style="font-size:13px;" class="table sakotable table-bordered table-striped dt-responsive">
               <thead>
                 <tr>
+                  <th><?php echo $_data['text_21'];?></th>
                   <th><?php echo $_data['text_2'];?></th>
                   <th><?php echo $_data['text_3'];?></th>
                   <th><?php echo $_data['text_4'];?></th>
@@ -100,6 +101,7 @@ function printContent(area,title){
 					$query .=" and f.bill_status='".$_GET['ps']."'";
 				}
 				$result = mysqli_query($link,$query);
+				$income_no = 1;
 				while($row = mysqli_fetch_array($result)){$rent_per_month_sub_total +=(float)$row['rent'];
 				$gas_per_month_sub_total +=(float)$row['gas_bill'];
 				$electric_per_month_sub_total +=(float)$row['electric_bill'];
@@ -110,6 +112,7 @@ function printContent(area,title){
 				$total_per_month_sub_total +=(float)$row['total_rent'];
 				?>
                 <tr>
+                    <td><?php echo $income_no++; ?></td>
                     <td><?php echo $row['issue_date']; ?></td>
                     <td><?php if($row['type']=='Rented'){echo $row['r_name'];} else{echo $row['o_name'];} ?></td>
                     <td><?php echo $row['type']; ?></td>
@@ -131,10 +134,11 @@ function printContent(area,title){
                   <th>&nbsp;</th>
                   <th>&nbsp;</th>
                   <th>&nbsp;</th>
-				  <th>&nbsp;</th>
-                  <th style="color:red;"><?php echo $ams_helper->currency($localization, $rent_per_month_sub_total); ?></th>
-				  <th style="color:red;"><?php echo $ams_helper->currency($localization, $other_per_month_sub_total); ?></th>
-				  <th style="color:red;"><?php echo $ams_helper->currency($localization, $total_per_month_sub_total); ?></th>
+				          <th>&nbsp;</th>
+                  <th><?php echo $_data['text_15'];?></th>
+                  <th style="color:red;text-align:left;"><?php echo $ams_helper->currency($localization, $rent_per_month_sub_total); ?></th>
+				  <th style="color:red;text-align:left;"><?php echo $ams_helper->currency($localization, $other_per_month_sub_total); ?></th>
+				  <th style="color:red;text-align:left;"><?php echo $ams_helper->currency($localization, $total_per_month_sub_total); ?></th>
                 </tr>
               </tfoot>
             </table>
@@ -147,11 +151,10 @@ function printContent(area,title){
 			<table style="font-size:13px;" class="table sakotable table-bordered table-striped dt-responsive">
               <thead>
                 <tr>
+                  <th><?php echo $_data['text_21'];?></th>
                   <th><?php echo $_data['text_2'];?></th>
-                  <th>Maintenance Title</th>
-                  <th>Month</th>
-                  <th>Year</th>
-                  <th>Amount</th>
+                  <th><?php echo $_data['text_22'];?></th>
+                  <th><?php echo $_data['text_24'];?></th>
                 </tr>
               </thead>
               <tbody>
@@ -183,6 +186,7 @@ function printContent(area,title){
 					$query_1 .=" and f.bill_status='".$_GET['ps']."'";
 				}
 				$result_1 = mysqli_query($link,$query_1);
+				$maintenance_no = 1;
 				while($row = mysqli_fetch_array($result_1)){
 				    $rent_per_month_sub_total +=(float)$row['rent'];
 				//$gas_per_month_sub_total +=(float)$row['gas_bill'];
@@ -194,10 +198,9 @@ function printContent(area,title){
 				$total_per_month_sub_total_1 +=(float)$row['m_amount'];
 				?>
                 <tr>
-                    <td><?php echo $row['m_title']; ?></td>
+                    <td><?php echo $maintenance_no++; ?></td>
                     <td><?php echo $row['m_date'];?></td>
-                    <td><?php echo $row['xmonth']; ?></td>
-                    <td><?php echo year_gt($row['xyear']); ?></td>
+                    <td><?php echo $row['m_title']; ?></td>
                     <td><?php echo $ams_helper->currency($localization,$row['m_amount']); ?></td>
                 </tr>
                 <?php } //mysqli_close($link);$link = NULL; ?>
@@ -206,9 +209,57 @@ function printContent(area,title){
                 <tr>
                   <th>&nbsp;</th>
                   <th>&nbsp;</th>
-                  <th>&nbsp;</th>
-                  <th>&nbsp;</th>
+                  <th><?php echo $_data['text_15'];?></th>
 				  <th style="color:red;"><?php echo $ams_helper->currency($localization, $total_per_month_sub_total_1); ?></th>
+                </tr>
+              </tfoot>
+            </table>
+			</div>
+            <div style="overflow:auto;">
+		  <div class="box-header">
+            <h3 style="text-decoration:underline;font-weight:bold;color:#000" class="box-title"><?php echo $_data['text_20']; ?></h3>
+          </div>
+			<table style="font-size:13px;" class="table sakotable table-bordered table-striped dt-responsive">
+              <thead>
+                <tr>
+                  <th><?php echo $_data['text_21'];?></th>
+                  <th><?php echo $_data['text_11'];?></th>
+                  <th><?php echo $_data['text_10'];?></th>
+                  <th><?php echo $_data['text_25'];?></th>
+                  <th><?php echo $_data['text_24'];?></th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+				$utility_total = 0;
+				$query_u = "SELECT ou.*,m.month_name FROM tbl_add_fair ou left join tbl_add_month_setup m on m.m_id = ou.month_id WHERE ou.type = 'Owner' and ou.branch_id = '" . (int)$_SESSION['objLogin']['branch_id'] . "'";
+				if(!empty($_GET['mid'])){
+					$query_u .=" and ou.month_id='".$_GET['mid']."'";
+				}
+				if(!empty($_GET['yid'])){
+					$query_u .=" and ou.xyear='".year_gt($_GET['yid'])."'";
+				}
+				$result_u = mysqli_query($link,$query_u);
+				$utility_no = 1;
+				while($row = mysqli_fetch_array($result_u)){
+					$utility_total += (float)$row['total_rent'];
+				?>
+                <tr>
+                    <td><?php echo $utility_no++; ?></td>
+                    <td><?php echo $ams_helper->currency($localization, $row['water_bill']); ?></td>
+                    <td><?php echo $ams_helper->currency($localization, $row['electric_bill']); ?></td>
+                    <td><?php echo $ams_helper->currency($localization, $row['gas_bill']); ?></td>
+                    <td><?php echo $ams_helper->currency($localization, $row['total_rent']); ?></td>
+                </tr>
+                <?php } ?>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th>&nbsp;</th>
+                  <th>&nbsp;</th>
+                  <th>&nbsp;</th>
+                  <th><?php echo $_data['text_15'];?></th>
+				  <th style="color:red;text-align:left;"><?php echo $ams_helper->currency($localization, $utility_total); ?></th>
                 </tr>
               </tfoot>
             </table>
@@ -220,12 +271,10 @@ function printContent(area,title){
 			<table style="font-size:13px;" class="table sakotable table-bordered table-striped dt-responsive">
               <thead>
                 <tr>
-                  <th><?php echo $_data['text_2'];?></th>
+                  <th><?php echo $_data['text_21'];?></th>
                   <th><?php echo $_data['text_3'];?></th>
-                  <th><?php echo $_data['text_4'];?></th>
-                  <th><?php echo $_data['text_5'];?></th>
-                  <th><?php echo $_data['text_6'];?></th>
-                  <th><?php echo $_data['text_7'];?></th>
+                  <th><?php echo $_data['text_23'];?></th>
+                  <th><?php echo $_data['text_24'];?></th>
                 </tr>
               </thead>
               <tbody>
@@ -243,15 +292,14 @@ function printContent(area,title){
 				}
 				$query .=" order by es.emp_id ASC";
 				$result = mysqli_query($link,$query);
+				$salary_no = 1;
 				while($row = mysqli_fetch_array($result)){
 				$total_salary +=(float)$row['amount'];
 				?>
                 <tr>
-                    <td><?php echo $row['issue_date']; ?></td>
+                    <td><?php echo $salary_no++; ?></td>
                     <td><?php echo $row['e_name']; ?></td>
                     <td><?php echo $row['designation']; ?></td>
-                    <td><?php echo $row['month_name']; ?></td>
-                    <td><?php echo $row['year_name']; ?></td>
                     <td><?php echo $ams_helper->currency($localization, $row['amount']); ?></td>
                 </tr>
                 <?php } mysqli_close($link);$link = NULL; ?>
@@ -260,19 +308,17 @@ function printContent(area,title){
                 <tr>
                   <th>&nbsp;</th>
                   <th>&nbsp;</th>
-                  <th>&nbsp;</th>
-                  <th>&nbsp;</th>
-                  <th>&nbsp;</th>
-                  <th style="color:red;"><?php echo $ams_helper->currency($localization, $total_salary); ?></th>
+                  <th><?php echo $_data['text_15'];?></th>
+                  <th style="color:red;text-align:left;"><?php echo $ams_helper->currency($localization, $total_salary); ?></th>
                 </tr>
               </tfoot>
             </table>
 			</div>
 			<div>
 			    <?php 
-			    $expense = $total_per_month_sub_total - $total_per_month_sub_total_1 - $total_salary
+			    $expense = $total_per_month_sub_total - $total_per_month_sub_total_1 - $total_salary - $utility_total
 			    ?>
-			    <h3>Total Income Report : <span style="color:red;"><?php echo $ams_helper->currency($localization,$expense); ?></span></h3>
+			    <h3>Total Income Report : <span style="color:green;"><?php echo $ams_helper->currency($localization,$expense); ?></span></h3>
 			</div>    
           </div>
         </div>

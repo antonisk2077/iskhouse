@@ -16,6 +16,16 @@ $_data['text_88'] 		= "Select";
 $_data['text_99'] 		= "Paid";
 $_data['text_100'] 		= "Due";
 
-$_data['validation'] 	= "Please select at least one or more fields";
+$_data['text_20'] 		= "Floor No";
+$_data['text_21'] 		= "Unit No";
+$_data['text_22'] 		= "Status";
+$_data['text_23'] 		= "Booked";
+$_data['text_24'] 		= "Empty";
+$_data['text_25'] 		= "Total Income";
+$_data['text_26'] 		= "Price";
+$_data['text_27'] 		= "Tenant Name";
+$_data['text_28'] 		= "Check-in Date";
+
+$_data['validation'] 	= "Please select month and year";
 
 ?>

@@ -3,7 +3,7 @@
 //English Package
 //copyright: sakosys.com
 
-$_data['text_1'] 		= "Owner Utility Details";
+$_data['text_1'] 		= "Utility Details";
 $_data['text_2'] 		= "Owner Name";
 $_data['text_3'] 		= "Floor No";
 $_data['text_4'] 		= "Unit No";

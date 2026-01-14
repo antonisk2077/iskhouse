@@ -26,23 +26,6 @@ if(!isset($_SESSION['objLogin'])){
       </div>
         <div class="box-body row">
           <div class="form-group col-md-6">
-            <label for="ddlFloorNo"><?php echo $_data['text_4'];?> :</label>
-            <select onchange="getUnitReport(this.value)" name="ddlFloorNo" id="ddlFloorNo" class="form-control">
-              <option value="">--<?php echo $_data['text_4'];?>--</option>
-              <?php 
-			  $result_floor = mysqli_query($link,"SELECT * FROM tbl_add_floor where branch_id = ".(int)$_SESSION['objLogin']['branch_id']." order by fid ASC");
-					while($row_floor = mysqli_fetch_array($result_floor)){?>
-              <option  value="<?php echo $row_floor['fid'];?>"><?php echo $row_floor['floor_no'];?></option>
-              <?php } ?>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="ddlUnitNo"><?php echo $_data['text_5'];?> :</label>
-            <select name="ddlUnitNo" id="ddlUnitNo" class="form-control">
-              <option value="">--<?php echo $_data['text_5'];?>--</option>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
             <label for="ddlMonth"><?php echo $_data['text_6'];?> :</label>
             <select name="ddlMonth" id="ddlMonth" class="form-control">
               <option value="">--<?php echo $_data['text_6'];?>--</option>
@@ -53,7 +36,7 @@ if(!isset($_SESSION['objLogin'])){
               <?php } ?>
             </select>
           </div>
-		  <div class="form-group col-md-6">
+          <div class="form-group col-md-6">
             <label for="ddlYear"><?php echo $_data['text_66'];?> :</label>
             <select name="ddlYear" id="ddlYear" class="form-control">
               <option value="">--<?php echo $_data['text_66'];?>--</option>
@@ -64,18 +47,6 @@ if(!isset($_SESSION['objLogin'])){
               <?php }mysqli_close($link);$link = NULL; ?>
             </select>
           </div>
-		  
-		  <div class="form-group col-md-6">
-            <label for="ddlPaymentStatus"><?php echo $_data['text_8'];?> :</label>
-            <select name="ddlPaymentStatus" id="ddlPaymentStatus" class="form-control">
-              <option value="">--<?php echo $_data['text_88'];?>--</option>
-			  <option value="1"><?php echo $_data['text_99'];?></option>
-			  <option value="0"><?php echo $_data['text_100'];?></option>
-             
-            </select>
-          </div>
-		  
-		  
         </div>
         <div class="box-footer">
           <div class="form-group pull-right">
@@ -90,33 +61,14 @@ if(!isset($_SESSION['objLogin'])){
 <!-- /.row -->
 <script type="text/javascript">
 	function getFairInfo(){
-		var floor_id = $("#ddlFloorNo").val();
-		var unit_id = $("#ddlUnitNo").val();
 		var month_id = $("#ddlMonth").val();
 		var year_id = $("#ddlYear").val();
-		var status = $("#ddlPaymentStatus").val();
-		if(floor_id == '' && unit_id == '' && month_id == '' && year_id == ''){
+		if(month_id == '' || year_id == ''){
 			alert('<?php echo $_data['validation']; ?>');
 		} else {
-			window.open('<?php echo WEB_URL;?>report/fair_info_floor.php?fid=' + floor_id + '&uid=' + unit_id + '&mid=' + month_id + '&yid=' + year_id + '&ps=' + status,'_blank');
+			window.open('<?php echo WEB_URL;?>report/fair_unit_status_report.php?mid=' + month_id + '&yid=' + year_id,'_blank');
 		}
 		
-		/*if(floor_id != '' && unit_id != '' && month_id != '' && year_id != ''){
-			window.open('report/fair_info_all.php?fid=' + floor_id + '&uid=' + unit_id + '&mid=' + month_id + '&yid=' + year_id,'_blank');
-		}
-		else if(floor_id != '' && unit_id != ''){
-			window.open('report/fair_info_floor_unit.php?fid=' + floor_id + '&uid=' + unit_id,'_blank');
-		}
-		else if(floor_id != ''){
-			window.open('report/fair_info_floor.php?fid=' + floor_id,'_blank');
-		}
-		else if(month_id != ''){
-			window.open('report/fair_info_month.php?mid=' + month_id,'_blank');
-		}
-		
-		else{
-			alert('Please select at least one or more fields');
-		}*/
 	}
 </script>
 <?php include('../footer.php'); ?>

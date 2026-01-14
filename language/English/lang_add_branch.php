@@ -28,6 +28,7 @@ $_data['text_21'] 		= "Company Phone No";
 $_data['text_22'] 		= "Company Address";
 $_data['text_23'] 		= "Building Rules";
 $_data['text_24'] 		= "Apartment Rules";
+$_data['text_25'] 		= "Select Year";
 
 
 //

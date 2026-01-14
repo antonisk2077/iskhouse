@@ -35,9 +35,12 @@ $reneted_name = '';
 $rid = 0;
 
 if(isset($_POST['txtRent'])){
+	$other_bill = isset($_POST['txtOtherBill']) ? $_POST['txtOtherBill'] : '0.00';
+	$total_rent_calc = (float)$_POST['txtRent'] + (float)$other_bill;
+	$total_rent_calc = number_format($total_rent_calc, 2, '.', '');
 	if(isset($_POST['hdn']) && $_POST['hdn'] == '0'){
 	    $images_proof = uploadImages_id();
-		$sql = "INSERT INTO tbl_add_fair(type,floor_no,unit_no,rid,month_id,xyear,rent,water_bill,electric_bill,gas_bill,security_bill,utility_bill,other_bill,total_rent,issue_date,paid_date,branch_id,bill_status,images_proof) values('$type','$_POST[ddlFloorNo]','$_POST[ddlUnitNo]','$_POST[hdnRentedId]','$_POST[ddlMonth]','$_POST[ddlYear]','$_POST[txtRent]','$_POST[txtWaterBill]','$_POST[txtElectricBill]','$_POST[txtGasBill]','$_POST[txtSecurityBill]','$_POST[txtUtilityBill]','$_POST[txtOtherBill]','$_POST[txtTotalRent]','$_POST[txtIssueDate]','$_POST[txtPaidDate]','" . $_SESSION['objLogin']['branch_id'] . "','$_POST[ddlBillStatus]','$images_proof')";
+		$sql = "INSERT INTO tbl_add_fair(type,floor_no,unit_no,rid,month_id,xyear,rent,water_bill,electric_bill,gas_bill,security_bill,utility_bill,other_bill,total_rent,issue_date,paid_date,branch_id,bill_status,images_proof) values('$type','$_POST[ddlFloorNo]','$_POST[ddlUnitNo]','$_POST[hdnRentedId]','$_POST[ddlMonth]','$_POST[ddlYear]','$_POST[txtRent]','0','0','0','0','0','$_POST[txtOtherBill]','".$total_rent_calc."','$_POST[txtIssueDate]','$_POST[txtPaidDate]','" . $_SESSION['objLogin']['branch_id'] . "','$_POST[ddlBillStatus]','$images_proof')";
 		mysqli_query($link,$sql);
 		$rent_id = mysqli_insert_id($link);
 		mysqli_close($link);
@@ -56,7 +59,7 @@ if(isset($_POST['txtRent'])){
 			$images_proof = $_POST['img_exist_id'];
 		}
 
-		$sql = "UPDATE `tbl_add_fair` SET `floor_no`='".$_POST['ddlFloorNo']."',`unit_no`='".$_POST['ddlUnitNo']."',`rid`='".$_POST['hdnRentedId']."',`month_id`='".$_POST['ddlMonth']."',`xyear`='".$_POST['ddlYear']."',`rent`='".$_POST['txtRent']."',`water_bill`='".$_POST['txtWaterBill']."',`electric_bill`='".$_POST['txtElectricBill']."',`gas_bill`='".$_POST['txtGasBill']."',`security_bill`='".$_POST['txtSecurityBill']."',`utility_bill`='".$_POST['txtUtilityBill']."',`other_bill`='".$_POST['txtOtherBill']."',`total_rent`='".$_POST['txtTotalRent']."',`issue_date`='".$_POST['txtIssueDate']."',`paid_date`='".$_POST['txtPaidDate']."',`bill_status`='".$_POST['ddlBillStatus']."',`images_proof`='".$images_proof."'  WHERE f_id='".$_GET['id']."'";
+		$sql = "UPDATE `tbl_add_fair` SET `floor_no`='".$_POST['ddlFloorNo']."',`unit_no`='".$_POST['ddlUnitNo']."',`rid`='".$_POST['hdnRentedId']."',`month_id`='".$_POST['ddlMonth']."',`xyear`='".$_POST['ddlYear']."',`rent`='".$_POST['txtRent']."',`water_bill`='0',`electric_bill`='0',`gas_bill`='0',`security_bill`='0',`utility_bill`='0',`other_bill`='".$_POST['txtOtherBill']."',`total_rent`='".$total_rent_calc."',`issue_date`='".$_POST['txtIssueDate']."',`paid_date`='".$_POST['txtPaidDate']."',`bill_status`='".$_POST['ddlBillStatus']."',`images_proof`='".$images_proof."'  WHERE f_id='".$_GET['id']."'";
 		mysqli_query($link,$sql);
 
 		if(isset($_POST['btnSave'])){
@@ -107,13 +110,9 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
 else{
 	//
 	//
-	$result_location = mysqli_query($link,"SELECT * FROM tbl_add_utility_bill where branch_id= '".(int)$_SESSION['objLogin']['branch_id']."'");
-	if($row = mysqli_fetch_array($result_location)){
-		$gas_bill = $row['gas_bill'];
-		$security_bill = $row['security_bill'];
-	}
-	$total_rent = (float)$gas_bill + (float)$security_bill;
-	$total_rent = number_format($total_rent, 2, '.', '');
+	$gas_bill = '0.00';
+	$security_bill = '0.00';
+	$total_rent = number_format((float)$rent, 2, '.', '');
 }
 //
 function NewGuid() {
@@ -236,43 +235,11 @@ function uploadImages_id(){
               <div class="input-group-addon"> <?php echo CURRENCY;?> </div>
             </div>
           </div>
-          <div class="form-group col-md-6" style="display:none;">
-            <label for="txtWaterBill"><?php echo $_data['add_new_form_field_text_8'];?> :</label>
-            <div class="input-group">
-              <input type="text" name="txtWaterBill" onkeyup="calculateFairTotal();" value="<?php echo $water_bill;?>" id="txtWaterBill" class="form-control" />
-              <div class="input-group-addon"><?php echo CURRENCY;?></div>
-            </div>
-          </div>
-          <div class="form-group col-md-6" style="display:none;">
-            <label for="txtElectricBill"><?php echo $_data['add_new_form_field_text_9'];?> :</label>
-            <div class="input-group">
-              <input type="text" name="txtElectricBill" onkeyup="calculateFairTotal();" value="<?php echo $electric_bill;?>" id="txtElectricBill" class="form-control" />
-              <div class="input-group-addon"><?php echo CURRENCY;?></div>
-            </div>
-          </div>
-          <div class="form-group col-md-6" style="display:none;">
-            <label for="txtGasBill"><?php echo $_data['add_new_form_field_text_10'];?> :</label>
-            <div class="input-group">
-              <input type="hidden" id="hdnGasBill" name="hdnGasBill" value="<?php echo $gas_bill;?>" />
-              <input type="text" name="txtGasBill" onkeyup="calculateFairTotal();" value="<?php echo $gas_bill;?>" id="txtGasBill" class="form-control" />
-              <div class="input-group-addon"><?php echo CURRENCY;?></div>
-            </div>
-          </div>
-          <div class="form-group col-md-6" style="display:none;">
-            <label for="txtSecurityBill"><?php echo $_data['add_new_form_field_text_11'];?> :</label>
-            <div class="input-group">
-              <input type="hidden" id="hdnSecurityBill" name="hdnSecurityBill" value="<?php echo $security_bill;?>" />
-              <input type="text" name="txtSecurityBill" onkeyup="calculateFairTotal();" value="<?php echo $security_bill;?>" id="txtSecurityBill" class="form-control" />
-              <div class="input-group-addon"><?php echo CURRENCY;?></div>
-            </div>
-          </div>
-          <div class="form-group col-md-6" style="display:none;">
-            <label for="txtUtilityBill"><?php echo $_data['add_new_form_field_text_12'];?> :</label>
-            <div class="input-group">
-              <input type="text" name="txtUtilityBill" onkeyup="calculateFairTotal();" value="<?php echo $utility_bill;?>" id="txtUtilityBill" class="form-control" />
-              <div class="input-group-addon"><?php echo CURRENCY;?></div>
-            </div>
-          </div>
+          <input type="hidden" name="txtWaterBill" id="txtWaterBill" value="0.00" />
+          <input type="hidden" name="txtElectricBill" id="txtElectricBill" value="0.00" />
+          <input type="hidden" name="txtGasBill" id="txtGasBill" value="0.00" />
+          <input type="hidden" name="txtSecurityBill" id="txtSecurityBill" value="0.00" />
+          <input type="hidden" name="txtUtilityBill" id="txtUtilityBill" value="0.00" />
           <div class="form-group col-md-6">
             <label for="txtOtherBill"><?php echo $_data['add_new_form_field_text_13'];?> :</label>
             <div class="input-group">

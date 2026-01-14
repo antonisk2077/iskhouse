@@ -27,10 +27,6 @@ if(!isset($_SESSION['objLogin'])){
       </div>
       <div class="box-body">
         <div class="form-group">
-          <label for="ddlVDate"><?php echo $_data['text_4'];?> :</label>
-          <input type="text" name="ddlVDate" id="ddlVDate" class="datepicker form-control" />
-        </div>
-        <div class="form-group">
           <label for="ddlMonth"><?php echo $_data['text_5'];?> :</label>
           <select name="ddlMonth" id="ddlMonth" class="form-control">
             <option value="">--<?php echo $_data['text_5'];?>--</option>
@@ -64,14 +60,13 @@ if(!isset($_SESSION['objLogin'])){
 <!-- /.row -->
 <script type="text/javascript">
 	function getVisitorsInfo(){
-		var v_date = $("#ddlVDate").val();
 		var month_id = $("#ddlMonth").val();
 		var xyear = $("#ddlYear").val();
 		
-		if(v_date == '' && month_id == '' && xyear == ''){
+		if(month_id == '' && xyear == ''){
 			alert('<?php echo $_data['required']; ?>');
 		} else {
-			window.open('<?php echo WEB_URL;?>report/visitor_info.php?vid=' + v_date + '&mid=' + month_id + '&yid=' + xyear,'_blank');
+			window.open('<?php echo WEB_URL;?>report/visitor_info.php?mid=' + month_id + '&yid=' + xyear,'_blank');
 		}
 		/*else if(v_date != '' && month_id != ''){
 			window.open('report/visitor_info_date_month.php?vid=' + v_date + '&mid=' + month_id,'_blank');

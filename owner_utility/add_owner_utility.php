@@ -35,13 +35,13 @@ $ownid = 0;
 
 if(isset($_POST['ddlMonth'])){
 	if(isset($_POST['hdn']) && $_POST['hdn'] == '0'){
-		$sql = "INSERT INTO tbl_add_fair(type,floor_no,unit_no,rid,month_id,xyear,water_bill,electric_bill,gas_bill,security_bill,utility_bill,other_bill,total_rent,issue_date,branch_id) values('$type','0','0','0','$_POST[ddlMonth]','$_POST[ddlYear]','$_POST[txtWaterBill]','$_POST[txtElectricBill]','$_POST[txtGasBill]','0','0','0','$_POST[txtTotalRent]','$_POST[txtIssueDate]','" . $_SESSION['objLogin']['branch_id'] . "')";
+		$sql = "INSERT INTO tbl_add_fair(type,floor_no,unit_no,rid,month_id,xyear,water_bill,electric_bill,gas_bill,security_bill,utility_bill,other_bill,total_rent,issue_date,branch_id,images_proof) values('$type','0','0','0','$_POST[ddlMonth]','$_POST[ddlYear]','$_POST[txtWaterBill]','$_POST[txtElectricBill]','$_POST[txtGasBill]','0','0','0','$_POST[txtTotalRent]','$_POST[txtIssueDate]','" . $_SESSION['objLogin']['branch_id'] . "','')";
 		mysqli_query($link,$sql);
 		mysqli_close($link);
 		$url = WEB_URL . 'owner_utility/owner_utility_list.php?m=add';
 		header("Location: $url");
 	}else{
-		$sql = "UPDATE `tbl_add_fair` SET `floor_no`='0',`unit_no`='0',`rid`='0',`month_id`='".$_POST['ddlMonth']."',`xyear`='".$_POST['ddlYear']."',`water_bill`='".$_POST['txtWaterBill']."',`electric_bill`='".$_POST['txtElectricBill']."',`gas_bill`='".$_POST['txtGasBill']."',`security_bill`='0',`utility_bill`='0',`other_bill`='0',`total_rent`='".$_POST['txtTotalRent']."',`issue_date`='".$_POST['txtIssueDate']."' WHERE f_id='".$_GET['id']."'";
+		$sql = "UPDATE `tbl_add_fair` SET `floor_no`='0',`unit_no`='0',`rid`='0',`month_id`='".$_POST['ddlMonth']."',`xyear`='".$_POST['ddlYear']."',`water_bill`='".$_POST['txtWaterBill']."',`electric_bill`='".$_POST['txtElectricBill']."',`gas_bill`='".$_POST['txtGasBill']."',`security_bill`='0',`utility_bill`='0',`other_bill`='0',`total_rent`='".$_POST['txtTotalRent']."',`issue_date`='".$_POST['txtIssueDate']."',`images_proof`='' WHERE f_id='".$_GET['id']."'";
 		mysqli_query($link,$sql);
 		$url = WEB_URL . 'owner_utility/owner_utility_list.php?m=up';
 		header("Location: $url");

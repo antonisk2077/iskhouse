@@ -53,7 +53,6 @@ function printContent(area,title){
                     <th><?php echo $_data['text_3'];?></th>
                     <th><?php echo $_data['text_4'];?></th>
                     <th><?php echo $_data['text_5'];?></th>
-                    <th><?php echo $_data['text_6'];?></th>
                     <th><?php echo $_data['text_7'];?></th>
                     <th><?php echo $_data['text_8'];?></th>
                     <th><?php echo $_data['text_9'];?></th>
@@ -63,7 +62,7 @@ function printContent(area,title){
                 </thead>
                 <tbody>
                   <?php
-				  $query = "Select *,fl.floor_no as fl_floor,u.unit_no,m.month_name from tbl_visitor v inner join tbl_add_floor fl on fl.fid = v.floor_id inner join tbl_add_unit u on u.uid = v.unit_id inner join tbl_add_month_setup m on m.m_id = v.xmonth where v.branch_id = '".(int)$_SESSION['objLogin']['branch_id']."'";
+				  $query = "Select *,u.unit_no,m.month_name from tbl_visitor v inner join tbl_add_unit u on u.uid = v.unit_id inner join tbl_add_month_setup m on m.m_id = v.xmonth where v.branch_id = '".(int)$_SESSION['objLogin']['branch_id']."'";
 				  if(!empty($_GET['vid'])){
 				  	 $query .= " and v.issue_date='".$_GET['vid']."'";
 				  }
@@ -82,7 +81,6 @@ function printContent(area,title){
                     <td><?php echo $row['name']; ?></td>
                     <td><?php echo $row['mobile']; ?></td>
                     <td><?php echo $row['address']; ?></td>
-                    <td><?php echo $row['fl_floor']; ?></td>
                     <td><?php echo $row['unit_no']; ?></td>
                     <td><?php echo $row['intime']; ?></td>
                     <td><?php echo $row['outtime']; ?></td>

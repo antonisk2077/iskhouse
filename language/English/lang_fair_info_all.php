@@ -20,6 +20,12 @@ $_data['text_13'] 		= "Utility Bill";
 $_data['text_14'] 		= "Other Bill";
 $_data['text_15'] 		= "Total";
 $_data['text_16'] 		= "Print Information";
+$_data['text_20'] 		= "Utility Expense Report";
+$_data['text_21'] 		= "No";
+$_data['text_22'] 		= "Maintenance Title";
+$_data['text_23'] 		= "Position";
+$_data['text_24'] 		= "Total Cost";
+$_data['text_25'] 		= "Environmental Fee";
 
 
 ?>
