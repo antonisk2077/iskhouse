@@ -367,9 +367,14 @@ CREATE TABLE `tbl_add_maintenance_cost` (
   `mcid` int(11) NOT NULL,
   `m_title` varchar(200) NOT NULL,
   `m_location` varchar(200) NOT NULL DEFAULT '',
+  `m_qty` int(11) NOT NULL DEFAULT 1,
   `m_date` varchar(200) NOT NULL,
   `m_amount` decimal(15,2) NOT NULL DEFAULT 0.00,
   `m_details` varchar(200) NOT NULL,
+  `m_status` varchar(20) NOT NULL DEFAULT 'submitted',
+  `m_created_by` int(11) NOT NULL DEFAULT 0,
+  `m_transfer_to` varchar(200) NOT NULL DEFAULT '',
+  `transfer_image` varchar(200) NOT NULL DEFAULT '',
   `xmonth` int(11) NOT NULL DEFAULT 0,
   `xyear` int(11) NOT NULL DEFAULT 0,
   `branch_id` int(11) NOT NULL,
@@ -380,8 +385,8 @@ CREATE TABLE `tbl_add_maintenance_cost` (
 -- A tábla adatainak kiíratása `tbl_add_maintenance_cost`
 --
 
-INSERT INTO `tbl_add_maintenance_cost` (`mcid`, `m_title`, `m_location`, `m_date`, `m_amount`, `m_details`, `xmonth`, `xyear`, `branch_id`, `added_date`) VALUES
-(7, 'Light', '', '27/08/2019', 50.00, 'OK', 8, 11, 8, '2019-08-27 04:39:09');
+INSERT INTO `tbl_add_maintenance_cost` (`mcid`, `m_title`, `m_location`, `m_qty`, `m_date`, `m_amount`, `m_details`, `m_status`, `m_created_by`, `m_transfer_to`, `transfer_image`, `xmonth`, `xyear`, `branch_id`, `added_date`) VALUES
+(7, 'Light', '', 1, '27/08/2019', 50.00, 'OK', 'submitted', 0, '', '', 8, 11, 8, '2019-08-27 04:39:09');
 
 -- --------------------------------------------------------
 

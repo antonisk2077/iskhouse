@@ -26,9 +26,9 @@ $_data['menu_add_rent'] 					= "Tambah Pembayaran";
 $_data['menu_owner_utility'] 				= "Utilitas";
 $_data['menu_owner_utility_list'] 			= "Daftar Utilitas";
 $_data['menu_add_owner_utility'] 			= "Tambahkan Utilitas";
-$_data['menu_maintenance_cost'] 			= "Biaya Pemeliharaan";
-$_data['menu_maintenance_cost_list'] 		= "Daftar Biaya Pemeliharaan";
-$_data['menu_add_maintenance_cost'] 		= "Tambahkan Biaya Perawatan";
+$_data['menu_maintenance_cost'] 			= "Pengajuan";
+$_data['menu_maintenance_cost_list'] 		= "Daftar Pengajuan";
+$_data['menu_add_maintenance_cost'] 		= "Buat Pengajuan";
 $_data['menu_management_committee'] 		= "Komite Manajemen";
 $_data['menu_member_list'] 					= "Daftar Anggota";
 $_data['menu_add_member'] 					= "Tambahkan Anggota";
@@ -92,7 +92,7 @@ $_data['text_6'] 							= "Pernyataan Utilitas";
 $_data['text_7'] 							= "Detail Biaya Perawatan";
 $_data['text_8'] 							= "Info Detail Dana";
 $_data['text_88'] 							= "Mengeluh";
-$_data['text_complain_job'] 				= "Tetapkan Pekerjaan Pengaduan";
+$_data['text_complain_job'] 				= "Pengaduan";
 $_data['text_9'] 							= "Laporan Sewa";
 
 /* Owner Left Menu End */

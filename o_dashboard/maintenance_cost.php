@@ -5,6 +5,17 @@ if(!isset($_SESSION['objLogin'])){
 	header("Location: " . WEB_URL . "logout.php");
 	die();
 }
+
+function maintenanceStatusLabel($status, $data){
+	$status = trim((string)$status);
+	if($status === 'approved'){
+		return $data['status_approved'];
+	}
+	if($status === 'transferred'){
+		return $data['status_transferred'];
+	}
+	return $data['status_submitted'];
+}
 ?>
 
 <!-- Content Header (Page header) -->
@@ -35,6 +46,8 @@ if(!isset($_SESSION['objLogin'])){
               <th><?php echo $_data['text_3'];?></th>
               <th><?php echo $_data['text_4'];?></th>
               <th><?php echo $_data['text_5'];?></th>
+              <th><?php echo $_data['text_6'];?></th>
+              <th><?php echo $_data['text_7'];?></th>
               <th><?php echo $_data['action_text'];?></th>
             </tr>
           </thead>
@@ -43,10 +56,12 @@ if(!isset($_SESSION['objLogin'])){
 			$result = mysqli_query($link,"Select * from tbl_add_maintenance_cost where branch_id = ".(int)$_SESSION['objLogin']['branch_id']." order by mcid desc");
 			while($row = mysqli_fetch_array($result)){?>
             <tr>
-            <td><?php echo $row['m_title']; ?></td>
             <td><?php echo $row['m_date']; ?></td>
+            <td><?php echo $row['m_location']; ?></td>
+            <td><?php echo (int)$row['m_qty']; ?></td>
 			<td><?php echo $ams_helper->currency($localization, $row['m_amount']); ?></td>
 			<td><?php echo $row['m_details']; ?></td>
+            <td><?php echo maintenanceStatusLabel($row['m_status'], $_data); ?></td>
             <td>
             <a class="btn btn-success ams_btn_special" data-toggle="tooltip" href="javascript:;" onclick="$('#nurse_view_<?php echo $row['mcid']; ?>').modal('show');" data-original-title="<?php echo $_data['view_text'];?>"><i class="fa fa-eye"></i></a>
             <div id="nurse_view_<?php echo $row['mcid']; ?>" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -54,16 +69,18 @@ if(!isset($_SESSION['objLogin'])){
                 <div class="modal-content">
                   <div class="modal-header green_header">
                     <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true"><i class="fa fa-close"></i></span></button>
-                    <h3 class="modal-title"><?php echo $_data['text_6'];?></h3>
+                    <h3 class="modal-title"><?php echo $_data['text_8'];?></h3>
                   </div>
 				  <div class="modal-body">
                     <h3 style="text-decoration:underline;"><?php echo $_data['details_information'];?></h3>
                     <div class="row">
                       <div class="col-xs-12"> 
-					    <b><?php echo $_data['text_2'];?> :</b> <?php echo $row['m_title']; ?><br/>
-                        <b><?php echo $_data['text_3'];?> :</b> <?php echo $row['m_date']; ?><br/>
-						<b><?php echo $_data['text_4'];?> : </b> <?php echo $ams_helper->currency($localization, $row['m_amount']); ?><br/>
-                        <b><?php echo $_data['text_5'];?> :</b> <?php echo $row['m_details']; ?><br/>
+                        <b><?php echo $_data['text_2'];?> :</b> <?php echo $row['m_date']; ?><br/>
+					    <b><?php echo $_data['text_3'];?> :</b> <?php echo $row['m_location']; ?><br/>
+                        <b><?php echo $_data['text_4'];?> :</b> <?php echo (int)$row['m_qty']; ?><br/>
+						<b><?php echo $_data['text_5'];?> : </b> <?php echo $ams_helper->currency($localization, $row['m_amount']); ?><br/>
+                        <b><?php echo $_data['text_6'];?> :</b> <?php echo $row['m_details']; ?><br/>
+                        <b><?php echo $_data['text_7'];?> :</b> <?php echo maintenanceStatusLabel($row['m_status'], $_data); ?><br/>
                       </div>
                     </div>
                   </div>

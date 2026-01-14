@@ -123,7 +123,7 @@ function printContent(area,title){
 				while($row_cost = mysqli_fetch_array($result_cost)){
 				$cost_sub_total +=(float)$row_cost['m_amount'];
 				?>
-              	<td><?php echo $row_cost['m_title']; ?></td>
+              	<td><?php echo $row_cost['m_location']; ?></td>
                 <td><?php echo $row_cost['m_date']; ?></td>
                 <td><?php echo $row_cost['m_details']; ?></td>
 				<td><?php echo $ams_helper->currency($localization, $row_cost['m_amount']); ?></td>

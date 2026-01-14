@@ -1,39 +1,104 @@
-<?php 
-include('../header.php');
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+	session_start();
+}
+if(isset($_SESSION['login_type']) && (int)$_SESSION['login_type'] == 3){
+	include('../header_emp.php');
+} else {
+	include('../header.php');
+}
 include(ROOT_PATH.'language/'.$lang_code_global.'/lang_add_maintenance_cost.php');
 if(!isset($_SESSION['objLogin'])){
 	header("Location: " . WEB_URL . "logout.php");
 	die();
 }
 $success = "none";
-$m_title = '';
 $m_date = '';
+$m_qty = 1;
 $m_amount = '0.00';
 $m_details = '';
 $m_location = '';
-$m_month = 0;
-$m_year = 0;
 $branch_id = '';
+$m_transfer_to = '';
 $title = $_data['add_title_text'];
 $button_text = $_data['save_button_text'];
 $successful_msg = $_data['add_msg'];
 $form_url = WEB_URL . "maintenance/add_maintenance_cost.php";
 $id="";
 $hdnid="0";
+$is_employee = isset($_SESSION['login_type']) && $_SESSION['login_type'] == '3';
+$is_super_admin = isset($_SESSION['login_type']) && $_SESSION['login_type'] == '5';
+function resolveBranchId($link, $is_super_admin, $is_employee){
+	if($is_super_admin){
+		return 0;
+	}
+	if(!empty($_SESSION['objLogin']['branch_id'])){
+		return (int)$_SESSION['objLogin']['branch_id'];
+	}
+	if($is_employee && !empty($_SESSION['objLogin']['eid'])){
+		$result_branch = mysqli_query($link,"SELECT branch_id FROM tbl_add_employee WHERE eid = " . (int)$_SESSION['objLogin']['eid']);
+		if($row_branch = mysqli_fetch_array($result_branch)){
+			return (int)$row_branch['branch_id'];
+		}
+	}
+	return 0;
+}
+if(!$is_super_admin){
+	$branch_id = resolveBranchId($link, $is_super_admin, $is_employee);
+}
 
-if(isset($_POST['txtMTitle'])){
+function deriveMonthYear($date_value) {
+	$date_value = trim((string)$date_value);
+	if($date_value === ''){
+		return array(0, 0);
+	}
+	$date_obj = DateTime::createFromFormat('d/m/Y', $date_value);
+	if(!$date_obj){
+		$date_obj = DateTime::createFromFormat('Y-m-d', $date_value);
+	}
+	if(!$date_obj){
+		try {
+			$date_obj = new DateTime($date_value);
+		} catch (Exception $e) {
+			return array(0, 0);
+		}
+	}
+	return array((int)$date_obj->format('n'), (int)$date_obj->format('Y'));
+}
+
+if(!$is_employee){
+	header("Location: " . WEB_URL . "maintenance/maintenance_cost_list.php");
+	die();
+}
+
+if(isset($_POST['txtMDate'])){
 	$location_value = isset($_POST['ddlLocation']) ? trim($_POST['ddlLocation']) : '';
 	if($location_value === 'other'){
 		$location_value = isset($_POST['txtLocationOther']) ? trim($_POST['txtLocationOther']) : '';
 	}
+	$branch_value = isset($_POST['ddlBranch']) ? (int)$_POST['ddlBranch'] : 0;
+	if($branch_value == 0 && !empty($_SESSION['objLogin']['branch_id'])){
+		$branch_value = (int)$_SESSION['objLogin']['branch_id'];
+	}
+	if($branch_value == 0 && $location_value !== '' && $location_value !== 'other'){
+		$result_unit_branch = mysqli_query($link,"SELECT branch_id FROM tbl_add_unit WHERE unit_no = '" . mysqli_real_escape_string($link, $location_value) . "' LIMIT 1");
+		if($row_unit_branch = mysqli_fetch_array($result_unit_branch)){
+			$branch_value = (int)$row_unit_branch['branch_id'];
+		}
+	}
+	$m_qty_value = isset($_POST['txtMQty']) ? (int)$_POST['txtMQty'] : 0;
+	list($month_value, $year_value) = deriveMonthYear($_POST['txtMDate']);
 	if(isset($_POST['hdn']) && $_POST['hdn'] == '0'){
-		$sql = "INSERT INTO tbl_add_maintenance_cost(m_title, m_location, m_date, xmonth, xyear, m_amount, m_details,branch_id) values('$_POST[txtMTitle]','".$location_value."','$_POST[txtMDate]','$_POST[ddlMonth]','$_POST[ddlYear]','$_POST[txtMAmount]','$_POST[txtMDetails]','" . $_SESSION['objLogin']['branch_id'] . "')";
+		$created_by = $is_employee ? (int)$_SESSION['objLogin']['eid'] : 0;
+		$transfer_to = isset($_POST['txtMTransferTo']) ? mysqli_real_escape_string($link, $_POST['txtMTransferTo']) : '';
+		$sql = "INSERT INTO tbl_add_maintenance_cost(m_title, m_location, m_qty, m_date, xmonth, xyear, m_amount, m_details, m_status, m_created_by, m_transfer_to, branch_id) values('".$location_value."','".$location_value."','".$m_qty_value."','$_POST[txtMDate]','".$month_value."','".$year_value."','$_POST[txtMAmount]','$_POST[txtMDetails]','submitted','" . $created_by . "','".$transfer_to."','" . $branch_value . "')";
 		mysqli_query($link,$sql);
 		mysqli_close($link);
 		$url = WEB_URL . 'maintenance/maintenance_cost_list.php?m=add';
 		header("Location: $url");
 	} else {
-		$sql = "UPDATE `tbl_add_maintenance_cost` SET `m_title`='".$_POST['txtMTitle']."',`m_location`='".$location_value."',`m_date`='".$_POST['txtMDate']."',`xmonth`='".$_POST['ddlMonth']."',`xyear`='".$_POST['ddlYear']."',`m_amount`='".$_POST['txtMAmount']."',`m_details`='".$_POST['txtMDetails']."' WHERE mcid='".$_GET['id']."'";
+		$transfer_to = isset($_POST['txtMTransferTo']) ? mysqli_real_escape_string($link, $_POST['txtMTransferTo']) : '';
+		$sql = "UPDATE `tbl_add_maintenance_cost` SET `m_title`='".$location_value."',`m_location`='".$location_value."',`m_qty`='".$m_qty_value."',`m_date`='".$_POST['txtMDate']."',`xmonth`='".$month_value."',`xyear`='".$year_value."',`m_amount`='$_POST[txtMAmount]',`m_details`='$_POST[txtMDetails]',`m_transfer_to`='".$transfer_to."',`branch_id`='".$branch_value."' WHERE mcid='".$_GET['id']."'";
 		mysqli_query($link,$sql);
 		$url = WEB_URL . 'maintenance/maintenance_cost_list.php?m=up';
 		header("Location: $url");
@@ -44,13 +109,17 @@ if(isset($_POST['txtMTitle'])){
 if(isset($_GET['id']) && $_GET['id'] != ''){
 	$result = mysqli_query($link,"SELECT * FROM tbl_add_maintenance_cost where mcid = '" . $_GET['id'] . "'");
 	if($row = mysqli_fetch_array($result)){
-		$m_title = $row['m_title'];
+		if(isset($row['m_status']) && $row['m_status'] !== 'submitted'){
+			header("Location: " . WEB_URL . "maintenance/maintenance_cost_list.php");
+			die();
+		}
 		$m_location = $row['m_location'];
 		$m_date = $row['m_date'];
+		$m_qty = (int)$row['m_qty'];
 		$m_amount = $row['m_amount'];
 		$m_details = $row['m_details'];
-		$m_month = $row['xmonth'];
-		$m_year = $row['xyear'];
+		$m_transfer_to = $row['m_transfer_to'];
+		$branch_id = $row['branch_id'];
 		$hdnid = $_GET['id'];
 		$title = $_data['update_title_text'];
 		$button_text = $_data['update_button_text'];
@@ -84,46 +153,33 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
         <div class="box-body row">
           <?php
 		  $unit_options = array();
-		  $result_loc = mysqli_query($link,"SELECT unit_no FROM tbl_add_unit WHERE branch_id = " . (int)$_SESSION['objLogin']['branch_id'] . " ORDER BY unit_no ASC");
+		  $result_loc = mysqli_query($link,"SELECT u.unit_no, u.branch_id, b.branch_name FROM tbl_add_unit u left join tblbranch b on b.branch_id = u.branch_id ORDER BY u.unit_no ASC");
 		  while($row_loc = mysqli_fetch_array($result_loc)){
-		  	$unit_options[] = $row_loc['unit_no'];
+		  	$unit_options[] = $row_loc;
 		  }
-		  $is_other_location = ($m_location !== '' && !in_array($m_location, $unit_options, true));
+		  $is_other_location = ($m_location !== '' && !in_array($m_location, array_column($unit_options, 'unit_no'), true));
 		  ?>
           <div class="form-group col-md-12">
             <label for="txtMDate"><span class="errorStar">*</span> <?php echo $_data['date'];?> :</label>
             <input type="text" name="txtMDate" value="<?php echo $m_date;?>" id="txtMDate" class="form-control datepicker"/>
           </div>
           <div class="form-group col-md-6">
-            <label for="ddlMonth"><span class="errorStar">*</span> <?php echo $_data['month'];?> :</label>
-            <select name="ddlMonth" id="ddlMonth" class="form-control">
-              <option value="">--<?php echo $_data['select_month'];?>--</option>
+            <label for="ddlBranch"><span class="errorStar">*</span> <?php echo $_data['text_9'];?> :</label>
+            <select name="ddlBranch" id="ddlBranch" class="form-control">
+              <option value="">--<?php echo $_data['text_10'];?>--</option>
               <?php 
-				$result_unit = mysqli_query($link,"SELECT * FROM tbl_add_month_setup order by m_id ASC");
-				while($row_unit = mysqli_fetch_array($result_unit)){?>
-              	<option <?php if($m_month == $row_unit['m_id']){echo 'selected';}?> value="<?php echo $row_unit['m_id'];?>"><?php echo $row_unit['month_name'];?></option>
+				$result_branch = mysqli_query($link,"SELECT * FROM tblbranch WHERE b_status = 1 order by branch_name ASC");
+				while($row_branch = mysqli_fetch_array($result_branch)){?>
+              	<option <?php if($branch_id == $row_branch['branch_id']){echo 'selected';}?> value="<?php echo $row_branch['branch_id'];?>"><?php echo $row_branch['branch_name'];?></option>
               <?php } ?>
             </select>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="ddlYear"><span class="errorStar">*</span> <?php echo $_data['year'];?> :</label>
-            <select name="ddlYear" id="ddlYear" class="form-control">
-              <option value="">--<?php echo $_data['select_year'];?>--</option>
-              <?php for($i=2023;$i<=date('Y');$i++){?>
-              <option <?php if($m_year == $i){echo 'selected';}?> value="<?php echo $i;?>"><?php echo $i;?></option>
-              <?php } ?>
-            </select>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="txtMTitle"><span class="errorStar">*</span> <?php echo $_data['text_1'];?> :</label>
-            <input type="text" name="txtMTitle" value="<?php echo $m_title;?>" id="txtMTitle" class="form-control" />
           </div>
           <div class="form-group col-md-6">
             <label for="ddlLocation"><span class="errorStar">*</span> <?php echo $_data['text_4'];?> :</label>
             <select name="ddlLocation" id="ddlLocation" class="form-control">
               <option value="">--<?php echo $_data['text_5'];?>--</option>
-              <?php foreach($unit_options as $unit_no){ ?>
-                <option <?php if(!$is_other_location && $m_location == $unit_no){echo 'selected';}?> value="<?php echo $unit_no;?>"><?php echo $unit_no;?></option>
+              <?php foreach($unit_options as $unit_row){ ?>
+                <option data-branch="<?php echo (int)$unit_row['branch_id'];?>" <?php if(!$is_other_location && $m_location == $unit_row['unit_no']){echo 'selected';}?> value="<?php echo $unit_row['unit_no'];?>"><?php echo $unit_row['unit_no'];?></option>
               <?php } ?>
               <option <?php if($is_other_location){echo 'selected';}?> value="other"><?php echo $_data['text_6'];?></option>
             </select>
@@ -131,6 +187,14 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
           <div class="form-group col-md-12" id="locationOtherWrap" style="display:<?php echo $is_other_location ? 'block' : 'none'; ?>;">
             <label for="txtLocationOther"><span class="errorStar">*</span> <?php echo $_data['text_7'];?> :</label>
             <input type="text" name="txtLocationOther" value="<?php echo $is_other_location ? $m_location : '';?>" id="txtLocationOther" class="form-control" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="txtMQty"><span class="errorStar">*</span> <?php echo $_data['text_8'];?> :</label>
+            <input type="number" name="txtMQty" value="<?php echo $m_qty;?>" id="txtMQty" class="form-control" min="1" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="txtMTransferTo"><span class="errorStar">*</span> <?php echo $_data['text_11'];?> :</label>
+            <input type="text" name="txtMTransferTo" value="<?php echo $m_transfer_to;?>" id="txtMTransferTo" class="form-control" />
           </div>
           <div class="form-group col-md-6">
             <label for="txtMAmount"><span class="errorStar">*</span> <?php echo $_data['text_2'];?> :</label>
@@ -164,38 +228,38 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
 			$("#txtMDate").focus();
 			return false;
 		}
-		else if($("#ddlMonth").val() == ''){
-			alert("<?php echo $_data['v2']; ?>");
-			$("#ddlMonth").focus();
-			return false;
-		}
-		else if($("#ddlYear").val() == ''){
-			alert("<?php echo $_data['v3']; ?>");
-			$("#ddlYear").focus();
-			return false;
-		}
-		else if($("#txtMTitle").val() == ''){
-			alert("<?php echo $_data['v4']; ?>");
-			$("#txtMTitle").focus();
+		else if($("#ddlBranch").val() == ''){
+			alert("<?php echo $_data['v7']; ?>");
+			$("#ddlBranch").focus();
 			return false;
 		}
 		else if($("#ddlLocation").val() == ''){
-			alert("<?php echo $_data['v7']; ?>");
+			alert("<?php echo $_data['v2']; ?>");
 			$("#ddlLocation").focus();
 			return false;
 		}
 		else if($("#ddlLocation").val() == 'other' && $("#txtLocationOther").val() == ''){
-			alert("<?php echo $_data['v8']; ?>");
+			alert("<?php echo $_data['v6']; ?>");
 			$("#txtLocationOther").focus();
 			return false;
 		}
+		else if($("#txtMQty").val() == '' || parseInt($("#txtMQty").val(), 10) <= 0){
+			alert("<?php echo $_data['v3']; ?>");
+			$("#txtMQty").focus();
+			return false;
+		}
+		else if($("#txtMTransferTo").val() == ''){
+			alert("<?php echo $_data['v8']; ?>");
+			$("#txtMTransferTo").focus();
+			return false;
+		}
 		else if($("#txtMAmount").val() == ''){
-			alert("<?php echo $_data['v5']; ?>");
+			alert("<?php echo $_data['v4']; ?>");
 			$("#txtMAmount").focus();
 			return false;
 		}
 		else if($("#txtMDetails").val() == ''){
-			alert("<?php echo $_data['v6']; ?>");
+			alert("<?php echo $_data['v5']; ?>");
 			$("#txtMDetails").focus();
 			return false;
 		}
@@ -211,5 +275,25 @@ if(isset($_GET['id']) && $_GET['id'] != ''){
 			$("#locationOtherWrap").hide();
 		}
 	});
+
+	$("#ddlBranch").change(function(){
+		var branchId = $(this).val();
+		$("#ddlLocation option").each(function(){
+			var optionBranch = $(this).data('branch');
+			if(!optionBranch){
+				$(this).show();
+				return;
+			}
+			if(branchId === "" || optionBranch == branchId){
+				$(this).show();
+			} else {
+				$(this).hide();
+			}
+		});
+		$("#ddlLocation").val('');
+		$("#locationOtherWrap").hide();
+	});
+
+	$("#ddlBranch").trigger('change');
 </script>
 <?php include('../footer.php'); ?>

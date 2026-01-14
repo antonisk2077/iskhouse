@@ -45,29 +45,47 @@ $cookie_name = "ams_lang_code";
 if(isset($_POST['username']) && $_POST['username'] != '' && isset($_POST['password']) && $_POST['password'] != ''){
 	$user_name = trim(make_safe($link, $_POST['username'])); //Escaping Strings
 	$password = $converter->encode(trim(make_safe($link, $_POST['password']))); //Escaping Strings
+	$login_type = '';
+	$row = array();
+	//super admin
+	$sql = mysqli_query($link, "SELECT * FROM tblsuper_admin WHERE email = '".$user_name."' and password = '".$password."'");
+	if($sql && ($row = mysqli_fetch_assoc($sql))){
+		$login_type = '5';
+	}
 	//admin
-	if($_POST['ddlLoginType'] == '1'){
+	if($login_type == ''){
 		$sql = mysqli_query($link,"SELECT *,b.* FROM tbl_add_admin aa left join tblbranch b on b.branch_id = aa.branch_id WHERE aa.email = '".$user_name."' and aa.password = '".$password."'");
+		if($sql && ($row = mysqli_fetch_assoc($sql))){
+			$login_type = '1';
+		}
 	}
 	//owner
-	if($_POST['ddlLoginType'] == '2'){
+	if($login_type == ''){
 		$sql = mysqli_query($link, "SELECT *,b.* FROM tbl_add_owner o left join tblbranch b on b.branch_id = o.branch_id WHERE o.o_email = '".$user_name."' and o.o_password = '".$password."'");
+		if($sql && ($row = mysqli_fetch_assoc($sql))){
+			$login_type = '2';
+		}
 	}
 	//employee
-	if($_POST['ddlLoginType'] == '3'){
+	if($login_type == ''){
 		$sql = mysqli_query($link, "SELECT *,b.* FROM tbl_add_employee e left join tblbranch b on b.branch_id = e.branch_id WHERE e.e_email = '".$user_name."' and e.e_password = '".$password."'");
+		if($sql && ($row = mysqli_fetch_assoc($sql))){
+			$login_type = '3';
+		}
 	}
 	//renter
-	if($_POST['ddlLoginType'] == '4'){
+	if($login_type == ''){
 		$sql = mysqli_query($link, "SELECT *,b.* FROM tbl_add_rent ad left join tblbranch b on b.branch_id = ad.branch_id WHERE ad.r_email = '".$user_name."' and ad.r_password = '".$password."'");
+		if($sql && ($row = mysqli_fetch_assoc($sql))){
+			$login_type = '4';
+		}
 	}
-	//super admin
-	if($_POST['ddlLoginType'] == '5'){
-		$sql = mysqli_query($link, "SELECT * FROM tblsuper_admin WHERE email = '".$user_name."' and password = '".$password."'");
-	}
-	if(!empty($sql)){
-		if($row = mysqli_fetch_assoc($sql)){
-			if($_POST['ddlLoginType'] == '5'){
+
+	if($login_type != ''){
+		if($login_type == '5'){
+			if(empty($_POST['ddlBranch'])){
+				$msg = true;
+			} else {
 				$branch_list = getBuildingDetails($_POST['ddlBranch'], $link);
 				$arr = array(
 					'user_id'				=> $row['user_id'],
@@ -80,36 +98,35 @@ if(isset($_POST['username']) && $_POST['username'] != '' && isset($_POST['passwo
 				$arr = array_merge($arr, $branch_list);
 				$_SESSION['objLogin'] = $arr;
 			}
-			else{
-				$_SESSION['objLogin'] = $row;
-			}
-
-			mysqli_close($link);
-			$link = NULL;
-
-			$_SESSION['login_type'] = $_POST['ddlLoginType'];
-			if($_POST['ddlLoginType'] == '1' || $_POST['ddlLoginType'] == '5'){
-				header("Location: dashboard.php");
-				die();
-			}
-			else if($_POST['ddlLoginType'] == '2'){
-				header("Location: o_dashboard.php");
-				die();
-			}
-			else if($_POST['ddlLoginType'] == '3'){
-				header("Location: e_dashboard.php");
-				die();
-			}
-			else if($_POST['ddlLoginType'] == '4'){
-				header("Location: t_dashboard.php");
-				die();
-			}
-		} else {
-			$msg = true;
+		}
+		else{
+			$_SESSION['objLogin'] = $row;
 		}
 	}
 	else{
 		$msg = true;
+	}
+
+	if($login_type != '' && !$msg){
+		mysqli_close($link);
+		$link = NULL;
+		$_SESSION['login_type'] = $login_type;
+		if($login_type == '1' || $login_type == '5'){
+			header("Location: dashboard.php");
+			die();
+		}
+		else if($login_type == '2'){
+			header("Location: o_dashboard.php");
+			die();
+		}
+		else if($login_type == '3'){
+			header("Location: e_dashboard.php");
+			die();
+		}
+		else if($login_type == '4'){
+			header("Location: t_dashboard.php");
+			die();
+		}
 	}
 }
 //
@@ -184,17 +201,7 @@ include(ROOT_PATH.'language/'.$lang_code.'/lang_index.php');
             <div class="form-group input-group"> <span class="input-group-addon"><i class="fa fa-key"></i></span>
               <input type="password" name="password" id="password" class="form-control"  placeholder="<?php echo $_data['your_password']; ?>" />
             </div>
-            <div class="form-group input-group"> <span class="input-group-addon"><i class="fa fa-users"></i></span>
-              <select name="ddlLoginType" onChange="mewhat(this.value);" id="ddlLoginType" class="form-control">
-                <option value="">--<?php echo $_data['select_type']; ?>--</option>
-                <option value="1"><?php echo $_data['user_1']; ?></option>
-                <option value="2"><?php echo $_data['user_2']; ?></option>
-                <option value="3"><?php echo $_data['user_3']; ?></option>
-                <option value="4"><?php echo $_data['user_4']; ?></option>
-                <option value="5"><?php echo $_data['user_5']; ?></option>
-              </select>
-            </div>
-             <div id="x_branch" style="display:none;" class="form-group input-group"> <span class="input-group-addon"><i class="fa fa-random"  ></i></span>
+            <div id="x_branch" class="form-group input-group"> <span class="input-group-addon"><i class="fa fa-random"  ></i></span>
               <select class="form-control" name="ddlBranch" id="ddlBranch">
               <option value="">--<?php echo $_data['select_branch']; ?>--</option>
               <?php
@@ -249,10 +256,6 @@ function validationForm(){
 		$("#password").focus();
 		return false;
 	}
-	else if($("#ddlLoginType").val() == ''){
-		alert("<?php echo $_data['v4'];?>");
-		return false;
-	}
 	else if(!validateEmail($("#username").val())){
 		alert("<?php echo $_data['v2'];?>");
 		$("#username").focus();
@@ -267,19 +270,6 @@ function validateEmail(email) {
     return re.test(email);
 }
 
-function mewhat(val){
-	if(val != ''){
-		if(val == '5'){
-			$("#x_branch").show();
-		}
-		else{
-			$("#x_branch").hide();
-		}
-	}
-	else{
-		$("#x_branch").hide();
-	}
-}
 </script>
 <input type="hidden" id="web_url" value="<?php echo WEB_URL; ?>" />
 </body>

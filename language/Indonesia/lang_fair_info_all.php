@@ -20,12 +20,14 @@ $_data['text_13'] 		= "Tagihan Utilitas";
 $_data['text_14'] 		= "Tagihan lainnya";
 $_data['text_15'] 		= "Total";
 $_data['text_16'] 		= "Cetak Informasi";
-$_data['text_20'] 		= "Laporan Biaya Utilitas";
+$_data['text_20'] 		= "Biaya utilitas";
 $_data['text_21'] 		= "No";
 $_data['text_22'] 		= "Judul Pemeliharaan";
 $_data['text_23'] 		= "Jabatan";
 $_data['text_24'] 		= "Total Biaya";
 $_data['text_25'] 		= "Tagihan Lingkungan";
+$_data['text_26'] 		= "Biaya pemeliharaan gedung";
+$_data['text_27'] 		= "Biaya Gaji";
 
 
 ?>

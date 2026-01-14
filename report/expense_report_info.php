@@ -145,7 +145,7 @@ function printContent(area,title){
 			</div>
             <div style="overflow:auto;">
 		  <div class="box-header">
-                <h3 style="text-decoration:underline;font-weight:bold;color:#000" class="box-title">Manintance cost</h3>
+                <h3 style="text-decoration:underline;font-weight:bold;color:#000" class="box-title"><?php echo $_data['text_26']; ?></h3>
           </div>
                 
 			<table style="font-size:13px;" class="table sakotable table-bordered table-striped dt-responsive">
@@ -266,7 +266,7 @@ function printContent(area,title){
 			</div>
             <div style="overflow:auto;">
 		  <div class="box-header">
-            <h3 style="text-decoration:underline;font-weight:bold;color:#000" class="box-title">Employee Salary Report</h3>
+            <h3 style="text-decoration:underline;font-weight:bold;color:#000" class="box-title"><?php echo $_data['text_27']; ?></h3>
           </div>
 			<table style="font-size:13px;" class="table sakotable table-bordered table-striped dt-responsive">
               <thead>

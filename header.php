@@ -1,6 +1,8 @@
 <?php 
 ob_start();
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+	session_start();
+}
 include(__DIR__ . "/config.php");
 $page_name = '';
 $lang_code_global = "English";
