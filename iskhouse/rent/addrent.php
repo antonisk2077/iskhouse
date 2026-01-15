@@ -1,0 +1,461 @@
+<?php
+include('../header.php');
+include('../utility/common.php');
+include(ROOT_PATH.'language/'.$lang_code_global.'/lang_add_rented.php');
+if(!isset($_SESSION['objLogin'])){
+	header("Location: " . WEB_URL . "logout.php");
+	die();
+}
+
+
+$success = "none";
+$r_name = '';
+$r_email = '';
+$r_contact = '';
+$r_address = '';
+$r_txtRnotes = '';
+$r_nid = '';
+$r_floor_no = 0;
+$r_status = '';
+$r_unit_no = 0;
+$r_advance = '';
+$r_rent_pm = '';
+$r_date = '';
+$r_date_checkout= '';
+$r_month = '';
+$r_year = '';
+$r_password = '';
+$r_status = '1';
+$branch_id = '';
+$title = $_data['add_new_renter'];
+$button_text = $_data['save_button_text'];
+$successful_msg = $_data['added_renter_successfully'];
+$form_url = WEB_URL . "rent/addrent.php";
+$id="";
+$hdnid="0";
+$image_rnt = WEB_URL . 'img/no_image.jpg';
+$image_rnt_id = WEB_URL . 'img/id_no_image.jpg';
+$img_track = '';
+
+if(isset($_POST['txtRName'])){
+	$selected_unit_id = isset($_POST['ddlUnitNo']) ? (int)$_POST['ddlUnitNo'] : 0;
+	$selected_floor_id = isset($_POST['ddlFloorNo']) ? (int)$_POST['ddlFloorNo'] : 0;
+	$branch_value = isset($_POST['ddlBranch']) ? (int)$_POST['ddlBranch'] : 0;
+	if($selected_unit_id > 0){
+		$floor_res = mysqli_query($link, "SELECT floor_no, branch_id FROM tbl_add_unit WHERE uid = ".$selected_unit_id." LIMIT 1");
+		if($floor_row = mysqli_fetch_array($floor_res)){
+			$selected_floor_id = (int)$floor_row['floor_no'];
+			if($branch_value === 0 && !empty($floor_row['branch_id'])){
+				$branch_value = (int)$floor_row['branch_id'];
+			}
+		}
+	}
+	if($branch_value === 0 && !empty($_SESSION['objLogin']['branch_id'])){
+		$branch_value = (int)$_SESSION['objLogin']['branch_id'];
+	}
+	$renter_email = isset($_POST['txtREmail']) ? $_POST['txtREmail'] : '';
+	$renter_nid = isset($_POST['txtRNid']) ? $_POST['txtRNid'] : '';
+	$renter_password = $converter->encode($_POST['txtPassword'] ?? '123456');
+	$renter_month = (int)date('n');
+	$renter_year = (int)date('Y');
+	$status_value = isset($_POST['chkRStaus']) ? (int)$_POST['chkRStaus'] : 1;
+	$checkout_date = isset($_POST['txtRDateCheckOut']) ? $_POST['txtRDateCheckOut'] : '';
+	if($status_value === 1){
+		$checkout_date = '';
+	}
+	if(isset($_POST['hdn']) && $_POST['hdn'] == '0'){
+		$image_url = uploadImage();
+		$image_url_id = uploadImage_id();
+		$sql = "INSERT INTO tbl_add_rent(r_name,r_email,r_contact,r_address,r_notes,r_nid,r_floor_no,r_unit_no,r_advance,r_rent_pm,r_date,r_gone_date,r_password,image,r_status,r_month,r_year,branch_id,image_id) values('$_POST[txtRName]','".$renter_email."','$_POST[txtRContact]','$_POST[txtRAddress]','$_POST[txtRnotes]','".$renter_nid."','".$selected_floor_id."','$_POST[ddlUnitNo]','$_POST[txtRAdvance]','$_POST[txtRentPerMonth]','$_POST[txtRDate]','".$checkout_date."','".$renter_password."','$image_url',".$status_value.",".$renter_month.",".$renter_year.",'" . $branch_value . "','$image_url_id')";
+
+		mysqli_query($link,$sql);
+		
+		//update unit status
+		$new_unit_status = ($status_value === 1) ? 1 : 0;
+		$sqlx = "UPDATE `tbl_add_unit` set status = ".$new_unit_status." where floor_no = '".$selected_floor_id."' and uid = '".(int)$_POST['ddlUnitNo']."'";
+		mysqli_query($link,$sqlx);
+		////////////////////////
+		mysqli_close($link);
+		$url = WEB_URL . 'rent/rentlist.php?m=add';
+		header("Location: $url");
+
+	}
+	else{
+		$image_url = uploadImage();
+		$image_url_id = uploadImage_id();
+		if($image_url == ''){
+			$image_url = $_POST['img_exist'];
+		}
+		if($image_url_id == ''){
+			$image_url_id = $_POST['img_exist_id'];
+		}
+		$sql = "UPDATE `tbl_add_rent` SET `r_name`='".$_POST['txtRName']."',`r_contact`='".$_POST['txtRContact']."',`r_address`='".$_POST['txtRAddress']."',`r_notes`='".$_POST['txtRnotes']."',`r_floor_no`='".$selected_floor_id."',`r_unit_no`='".$_POST['ddlUnitNo']."',`r_rent_pm`='".$_POST['txtRentPerMonth']."',`r_advance`='".$_POST['txtRAdvance']."',`r_date`='".$_POST['txtRDate']."',`r_gone_date`='".$checkout_date."',`r_status`=".$status_value.",`image`='".$image_url."' ,`image_id`='".$image_url_id."',`branch_id`='".$branch_value."' WHERE rid='".$_GET['id']."'";
+		mysqli_query($link,$sql);
+		//update unit status
+		$sqlx = "UPDATE `tbl_add_unit` set status = 0 where floor_no = '".(int)$_POST['hdnFloor']."' and uid = '".(int)$_POST['hdnUnit']."'";
+		mysqli_query($link,$sqlx);
+		$new_unit_status = ($status_value === 1) ? 1 : 0;
+		$sqlxx = "UPDATE `tbl_add_unit` set status = ".$new_unit_status." where floor_no = '".$selected_floor_id."' and uid = '".(int)$_POST['ddlUnitNo']."'";	
+		mysqli_query($link,$sqlxx);
+///////////////////////////////////////////
+		$url = WEB_URL . 'rent/rentlist.php?m=up';
+		header("Location: $url");
+	}
+
+	$success = "block";
+}
+
+if(isset($_GET['id']) && $_GET['id'] != ''){
+	$result = mysqli_query($link,"SELECT * FROM tbl_add_rent where rid = '" . $_GET['id'] . "'");
+	if($row = mysqli_fetch_array($result)){
+		$r_name = $row['r_name'];
+		$r_contact = $row['r_contact'];
+		$r_address = $row['r_address'];
+		$r_txtRnotes = $row['r_notes'];
+		$r_floor_no = $row['r_floor_no'];
+		$r_unit_no = $row['r_unit_no'];
+		$r_advance = $row['r_advance'];
+		$r_rent_pm = $row['r_rent_pm'];
+		$r_date = $row['r_date'];
+		$r_date_checkout = $row['r_gone_date'];
+		$r_status = $row['r_status'];
+		$branch_id = isset($row['branch_id']) ? $row['branch_id'] : '';
+		if($row['image'] != ''){
+			$image_rnt = WEB_URL . 'img/upload/' . $row['image'];
+			$img_track = $row['image'];
+		}
+		if($row['image_id'] != ''){
+			$image_rnt_id = WEB_URL . 'img/upload/' . $row['image_id'];
+			$img_track_id = $row['image_id'];
+		}
+		$hdnid = $_GET['id'];
+		$title = $_data['update_rent'];
+		$button_text = $_data['update_button_text'];
+		$successful_msg = $_data['update_renter_successfully'];
+		$form_url = WEB_URL . "rent/addrent.php?id=".$_GET['id'];
+	}
+
+	//mysqli_close($link);
+
+}
+if(empty($branch_id) && !empty($_SESSION['objLogin']['branch_id'])){
+	$branch_id = $_SESSION['objLogin']['branch_id'];
+}
+
+//for image upload
+function uploadImage(){
+	if((!empty($_FILES["uploaded_file"])) && ($_FILES['uploaded_file']['error'] == 0)) {
+	  $filename = basename($_FILES['uploaded_file']['name']);
+	  $ext = substr($filename, strrpos($filename, '.') + 1);
+	  if(
+			($ext == "jpg" && $_FILES["uploaded_file"]["type"] == 'image/jpeg') ||
+			($ext == "jpeg" && $_FILES["uploaded_file_id"]["type"] == 'image/jpeg') ||
+
+			 ($ext == "png" && $_FILES["uploaded_file"]["type"] == 'image/png') || ($ext == "gif" && $_FILES["uploaded_file"]["type"] == 'image/gif')){
+	  	$temp = explode(".",$_FILES["uploaded_file"]["name"]);
+	  	$newfilename = NewGuid() . '.' .end($temp);
+		move_uploaded_file($_FILES["uploaded_file"]["tmp_name"], ROOT_PATH . '/img/upload/' . $newfilename);
+		return $newfilename;
+	  }
+	  else{
+	  	return '';
+	  }
+	}
+	return '';
+}
+function uploadImage_id(){
+	if((!empty($_FILES["uploaded_file_id"])) && ($_FILES['uploaded_file_id']['error'] == 0)) {
+	  $filename = basename($_FILES['uploaded_file_id']['name']);
+	  $ext = substr($filename, strrpos($filename, '.') + 1);
+	  if(($ext == "jpg" && $_FILES["uploaded_file_id"]["type"] == 'image/jpeg') ||
+		($ext == "jpeg" && $_FILES["uploaded_file_id"]["type"] == 'image/jpeg') ||
+		 ($ext == "png" && $_FILES["uploaded_file_id"]["type"] == 'image/png') ||
+		  ($ext == "gif" && $_FILES["uploaded_file_id"]["type"] == 'image/gif')){
+	  	$temp = explode(".",$_FILES["uploaded_file_id"]["name"]);
+	  	$newfilename = NewGuid() . '.' .end($temp);
+		move_uploaded_file($_FILES["uploaded_file_id"]["tmp_name"], ROOT_PATH . '/img/upload/' . $newfilename);
+		return $newfilename;
+	  }
+	  else{
+	  	return '';
+	  }
+	}
+	return '';
+}
+function NewGuid() {
+    $s = strtoupper(md5(uniqid(rand(),true)));
+    $guidText =
+        substr($s,0,8) . '-' .
+        substr($s,8,4) . '-' .
+        substr($s,12,4). '-' .
+        substr($s,16,4). '-' .
+        substr($s,20);
+    return $guidText;
+}
+?>
+<!-- Content Header (Page header) -->
+
+<section class="content-header">
+  <h1><?php echo $title;?></h1>
+  <ol class="breadcrumb">
+    <li><a href="<?php echo WEB_URL?>dashboard.php"><i class="fa fa-dashboard"></i><?php echo $_data['home_breadcam'];?></a></li>
+    <li class="active"><?php echo $_data['add_new_renter_information_breadcam'];?></li>
+    <li class="active"><?php echo $title;?></li>
+  </ol>
+</section>
+<!-- Main content -->
+<section class="content">
+<!-- Full Width boxes (Stat box) -->
+<div class="row">
+  <div class="col-md-12">
+    <div align="right" style="margin-bottom:1%;"> </div>
+    <div class="box box-success">
+      <div class="box-header">
+        <h3 class="box-title"><?php echo $_data['add_new_renter_entry_form'];?></h3>
+      </div>
+      <form onSubmit="return validateMe();" action="<?php echo $form_url; ?>" method="post" enctype="multipart/form-data" id="frm_renter_entry">
+        <div class="box-body row">
+          <div class="form-group col-md-6">
+            <label for="txtRName"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_1'];?> :</label>
+            <input type="text" name="txtRName" value="<?php echo $r_name;?>" id="txtRName" class="form-control" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="txtRContact"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_4'];?> :</label>
+            <input type="text" name="txtRContact" value="<?php echo $r_contact;?>" id="txtRContact" class="form-control" />
+          </div>
+          <div class="form-group  col-md-12">
+            <label for="txtRAddress"><span class="errorStar">*</span> Place Born, Date :</label>
+            <textarea name="txtRAddress" id="txtRAddress" class="form-control"><?php echo $r_address;?></textarea>
+          </div>
+          <div class="form-group  col-md-12">
+            <label for="txtRnotes"><span class="errorStar">*</span> Notes :</label>
+            <textarea name="txtRnotes" id="txtRnotes" class="form-control"><?php echo $r_txtRnotes;?></textarea>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="ddlBranch"><span class="errorStar">*</span> <?php echo $_data['branch_label'];?> :</label>
+            <select name="ddlBranch" id="ddlBranch" class="form-control">
+              <option value="">--<?php echo $_data['select_branch'];?>--</option>
+              <?php
+					$result_branch = mysqli_query($link,"SELECT * FROM tblbranch where b_status = 1 order by branch_name ASC");
+					while($row_branch = mysqli_fetch_array($result_branch)){?>
+              <option <?php if($branch_id == $row_branch['branch_id']){echo 'selected';}?> value="<?php echo $row_branch['branch_id'];?>"><?php echo $row_branch['branch_name'];?></option>
+              <?php } ?>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="floorDisplay"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_7'];?> :</label>
+            <input type="text" id="floorDisplay" class="form-control" readonly value="" />
+            <input type="hidden" name="ddlFloorNo" id="ddlFloorNo" value="<?php echo $r_floor_no; ?>" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="ddlUnitNo"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_8'];?> :</label>
+            <select name="ddlUnitNo" id="ddlUnitNo" class="form-control">
+              <option value="">--<?php echo $_data['select_unit'];?>--</option>
+              <?php
+				  	$unit_filter = " where (u.status = 0";
+					if(!empty($r_unit_no)){
+						$unit_filter .= " or u.uid = " . (int)$r_unit_no;
+					}
+					$unit_filter .= ")";
+				  	$result_unit = mysqli_query($link,"SELECT u.uid,u.unit_no,f.fid,f.floor_no,u.branch_id,u.status FROM tbl_add_unit u inner join tbl_add_floor f on f.fid = u.floor_no".$unit_filter." order by u.unit_no ASC");
+					while($row_unit = mysqli_fetch_array($result_unit)){?>
+              <option <?php if($r_unit_no == $row_unit['uid']){echo 'selected';}?> value="<?php echo $row_unit['uid'];?>" data-floor-id="<?php echo $row_unit['fid'];?>" data-floor-label="<?php echo $row_unit['floor_no'];?>" data-branch="<?php echo (int)$row_unit['branch_id'];?>"><?php echo $row_unit['unit_no'];?></option>
+              <?php } ?>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="txtRAdvance"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_9'];?> :</label>
+            <div class="input-group">
+              <input type="text" name="txtRAdvance" value="<?php echo $r_advance;?>" id="txtRAdvance" class="form-control" />
+              <div class="input-group-addon"> <?php echo CURRENCY;?> </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="txtRentPerMonth"><span class="errorStar">*</span> <?php echo $_data['add_new_form_field_text_10'];?> :</label>
+            <div class="input-group">
+              <input type="text" name="txtRentPerMonth" value="<?php echo $r_rent_pm;?>" id="txtRentPerMonth" class="form-control" />
+              <div class="input-group-addon"> <?php echo CURRENCY;?> </div>
+            </div>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="txtRDate"><span class="errorStar">*</span> Check-In Date :</label>
+            <input type="text" name="txtRDate" value="<?php echo $r_date;?>" id="txtRDate" class="form-control datepicker"/>
+          </div>
+          <div class="form-group col-md-6" id="txtRDateCheckOut_form" style="display:<?php echo $r_status == 1 ? 'none' : 'block';  ?>;">
+            <label for="txtRDate"><span class="errorStar">*</span> CheckOut Date :</label>
+            <input type="text" name="txtRDateCheckOut" value="<?php echo $r_date_checkout;?>" id="txtRDateCheckOut" class="form-control datepicker"/>
+          </div>
+          <div class="form-group col-md-12">
+            <label for="chkRStaus"><?php echo $_data['add_new_form_field_text_14'];?> :</label>
+            <select name="chkRStaus" id="chkRStaus" class="form-control">
+              <option <?php if($r_status=='1'){echo 'selected';}?> value="1"><?php echo $_data['add_new_form_field_text_16']; ?></option>
+              <option <?php if($r_status=='0'){echo 'selected';}?> value="0"><?php echo $_data['add_new_form_field_text_17']; ?></option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="Prsnttxtarea"><?php echo $_data['add_new_form_field_text_15'];?> :</label>
+            <a target="_blank" href="<?php echo $image_rnt; ?>"><img class="form-control" src="<?php echo $image_rnt; ?>" style="height:100px;width:100px;" id="output"/></a>
+            <input type="hidden" name="img_exist" value="<?php echo $img_track; ?>" />
+          <div class="form-group"> <span class="btn btn-file btn btn-default"><?php echo $_data['upload_image'];?>
+            <input type="file" name="uploaded_file" onchange="loadFile(event)" />
+            </span>
+        </div>
+
+          </div>
+          <div class="form-group col-md-6">
+            <label for="Prsnttxtarea_id">Upload identity :</label>
+            <a target="_blank" href="<?php echo $image_rnt_id; ?>"><img class="form-control" src="<?php echo $image_rnt_id; ?>" style="height:100px;width:100px;" id="output_1"/></a>
+            <input type="hidden" name="img_exist_id" value="<?php echo $img_track_id; ?>" />
+                      <div class="form-group"> <span class="btn btn-file btn btn-default"><?php echo $_data['upload_image'];?>
+            <input type="file" name="uploaded_file_id" onchange="loadFile_1(event)" />
+            </span>
+        </div>
+
+          </div>
+
+        </div>
+        <div class="box-footer">
+          <div class="form-group pull-right">
+            <?php if($hdnid=='0') { ?>
+            <button type="submit" onclick="validateMe();" name="button" class="btn btn-success"><i class="fa fa-floppy-o"></i> <?php echo $button_text; ?></button>
+            <?php } else { ?>
+            <button type="submit" name="button" class="btn btn-success"><i class="fa fa-floppy-o"></i> <?php echo $button_text; ?></button>
+            <?php } ?>
+            <a class="btn btn-warning" href="<?php echo WEB_URL; ?>rent/rentlist.php"><i class="fa fa-reply"></i> <?php echo $_data['back_text'];?></a> </div>
+        </div>
+        <input type="hidden" value="<?php echo $hdnid; ?>" name="hdn"/>
+        <input type="hidden" value="<?php echo $r_floor_no; ?>" name="hdnFloor"/>
+        <input type="hidden" value="<?php echo $r_unit_no; ?>" name="hdnUnit"/>
+      </form>
+      <!-- /.box-body -->
+    </div>
+    <!-- /.box -->
+  </div>
+</div>
+<!-- /.row -->
+<script type="text/javascript">
+var loadFile_1 = function(event) {
+	var output = document.getElementById('output_1');
+	output.src = URL.createObjectURL(event.target.files[0]);
+};
+function validateMe(){
+	syncFloorFromUnit();
+	if($("#txtRName").val() == ''){
+		alert("<?php echo $_data['required_1']; ?>");
+		$("#txtRName").focus();
+		return false;
+	}
+	else if($("#txtRContact").val() == ''){
+		alert("<?php echo $_data['required_4']; ?>");
+		$("#txtRContact").focus();
+		return false;
+	}
+	else if($("#txtRAddress").val() == ''){
+		alert("<?php echo $_data['required_5']; ?>");
+		$("#txtRAddress").focus();
+		return false;
+	}
+	else if($("#ddlBranch").val() == ''){
+		alert("<?php echo $_data['required_14']; ?>");
+		$("#ddlBranch").focus();
+		return false;
+	}
+	else if($("#ddlUnitNo").val() == ''){
+		alert("<?php echo $_data['required_8']; ?>");
+		$("#ddlUnitNo").focus();
+		return false;
+	}
+	else if($("#ddlFloorNo").val() == ''){
+		alert("<?php echo $_data['required_7']; ?>");
+		$("#ddlUnitNo").focus();
+		return false;
+	}
+	/*
+	else if($("#txtRAdvance").val() == ''){
+		alert("<?php echo $_data['required_9']; ?>");
+		$("#txtRAdvance").focus();
+		return false;
+	}
+	else if($("#txtRentPerMonth").val() == ''){
+		alert("<?php echo $_data['required_10']; ?>");
+		$("#txtRentPerMonth").focus();
+		return false;
+	}
+
+	else if($("#txtRDate").val() == ''){
+		alert("<?php echo $_data['required_11']; ?>");
+		$("#txtRDate").focus();
+		return false;
+	} */
+
+	else{
+		return true;
+	}
+}
+
+function syncFloorFromUnit(){
+	var unit = $("#ddlUnitNo").find(":selected");
+	var floorId = unit.data("floor-id") || "";
+	var floorLabel = unit.data("floor-label") || "";
+	if (floorId) {
+		$("#ddlFloorNo").val(floorId);
+	}
+	if (floorLabel) {
+		$("#floorDisplay").val(floorLabel);
+	} else if (unit.text()) {
+		$("#floorDisplay").val(unit.text().trim().charAt(0));
+	}
+}
+
+function filterUnitsByBranch(branchId){
+	$("#ddlUnitNo option").each(function(){
+		var optionBranch = $(this).data("branch");
+		if(!optionBranch){
+			$(this).show();
+			return;
+		}
+		if(String(optionBranch) === String(branchId)){
+			$(this).show();
+		} else {
+			$(this).hide();
+		}
+	});
+	var selected = $("#ddlUnitNo").find("option:selected");
+	if(selected.length && selected.is(":hidden")){
+		$("#ddlUnitNo").val("");
+		$("#floorDisplay").val("");
+		$("#ddlFloorNo").val("");
+	}
+}
+
+$("#ddlUnitNo").change(function(){
+	syncFloorFromUnit();
+});
+$("#ddlBranch").change(function(){
+	filterUnitsByBranch($(this).val());
+});
+
+$(document).ready(function(){
+	filterUnitsByBranch($("#ddlBranch").val());
+	syncFloorFromUnit();
+});
+
+
+//check renter email exist or not
+function renter_email_exist(){
+
+   		$("#frm_renter_entry").submit();
+
+
+}
+$("#chkRStaus").change(function(){
+    var checkstatus = $(this).val();
+    if(checkstatus == 1){
+        $("#txtRDateCheckOut_form").hide();
+    }else {
+        $("#txtRDateCheckOut_form").show();
+    }
+}); 
+</script>
+<?php include('../footer.php'); ?>

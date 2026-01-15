@@ -1,0 +1,138 @@
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: user_tenant in /home/mywondersiteclu/public_html/ams/header_ten.php on line 114
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header_ten.php on line 136
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: renter_complain_details in /home/mywondersiteclu/public_html/ams/header_ten.php on line 144
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header_ten.php on line 167
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: user_tenant in /home/mywondersiteclu/public_html/ams/header_ten.php on line 180
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header_ten.php on line 182
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header_ten.php on line 186
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header_ten.php on line 190
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header_ten.php on line 194
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header_ten.php on line 197
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header_ten.php on line 200
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:2
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: text_20 in /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php on line 38
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:46 UTC] PHP Notice:  Undefined index: text_24 in /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php on line 39
+[30-Jul-2020 10:48:46 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:46 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/tenant_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: user_tenant in /home/mywondersiteclu/public_html/ams/header_ten.php on line 114
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header_ten.php on line 136
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: renter_complain_details in /home/mywondersiteclu/public_html/ams/header_ten.php on line 144
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header_ten.php on line 167
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: user_tenant in /home/mywondersiteclu/public_html/ams/header_ten.php on line 180
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header_ten.php on line 182
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header_ten.php on line 186
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header_ten.php on line 190
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header_ten.php on line 194
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header_ten.php on line 197
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:48:50 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header_ten.php on line 200
+[30-Jul-2020 10:48:50 UTC] PHP Stack trace:
+[30-Jul-2020 10:48:50 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:0
+[30-Jul-2020 10:48:50 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/unit_details.php:2
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: user_tenant in /home/mywondersiteclu/public_html/ams/header_ten.php on line 114
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: lang_online in /home/mywondersiteclu/public_html/ams/header_ten.php on line 136
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: renter_complain_details in /home/mywondersiteclu/public_html/ams/header_ten.php on line 144
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: profile_update_title in /home/mywondersiteclu/public_html/ams/header_ten.php on line 167
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: user_tenant in /home/mywondersiteclu/public_html/ams/header_ten.php on line 180
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: profile_update_name in /home/mywondersiteclu/public_html/ams/header_ten.php on line 182
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: profile_update_email in /home/mywondersiteclu/public_html/ams/header_ten.php on line 186
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: profile_update_contact in /home/mywondersiteclu/public_html/ams/header_ten.php on line 190
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: profile_update_password in /home/mywondersiteclu/public_html/ams/header_ten.php on line 194
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: profile_update_information in /home/mywondersiteclu/public_html/ams/header_ten.php on line 197
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
+[30-Jul-2020 10:49:00 UTC] PHP Notice:  Undefined index: profile_update_button in /home/mywondersiteclu/public_html/ams/header_ten.php on line 200
+[30-Jul-2020 10:49:00 UTC] PHP Stack trace:
+[30-Jul-2020 10:49:00 UTC] PHP   1. {main}() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:0
+[30-Jul-2020 10:49:00 UTC] PHP   2. include() /home/mywondersiteclu/public_html/ams/t_dashboard/r_report.php:1
